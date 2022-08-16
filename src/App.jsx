@@ -1,4 +1,4 @@
-import styles from './App.module.css'
+import './App.css'
 import NavSideBar from './Components/NavSideBar/NavSideBar'
 import { NavLink, Routes, Route} from 'react-router-dom'
 import Work from './Pages/Work'
