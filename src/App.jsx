@@ -5,6 +5,7 @@ import Work from './Pages/Work'
 import Education from './Pages/Education'
 import Curriculum from './Pages/Curriculum'
 import Language from './Pages/Languages'
+import Sidebar from './Components/Sidebar/Sidebar'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <div>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='profile'>Profile</NavLink>
+        <Sidebar />
       </div>
       <Routes>
         <Route path="/" element={<NavSideBar/>}>
