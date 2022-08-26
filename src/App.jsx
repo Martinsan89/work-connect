@@ -1,10 +1,11 @@
 import './App.css'
 import NavSideBar from './Components/NavSideBar/NavSideBar'
 import { NavLink, Routes, Route} from 'react-router-dom'
-import Work from './Pages/Work'
-import Education from './Pages/Education'
-import Curriculum from './Pages/Curriculum'
-import Language from './Pages/Languages'
+import Work from './Pages/NavMenu/Work/Work'
+import Education from './Pages/NavMenu/Education/Education'
+import Curriculum from './Pages/NavMenu/CV/Curriculum'
+import Language from './Pages/NavMenu/Language/Languages'
+import Login from './Pages/Login/Login'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <div>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='profile'>Profile</NavLink>
+        <NavLink to='login'>Login</NavLink>
       </div>
       <Routes>
         <Route path="/" element={<NavSideBar/>}>
@@ -27,6 +29,7 @@ function App() {
           <Route path='curriculum' element={<Curriculum />}/>
           <Route path='language' element={<Language />}/>
         </Route>
+        <Route path='login' element={<Login />} />
       </Routes>
     </div>
   )

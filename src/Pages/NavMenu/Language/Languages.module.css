@@ -32,9 +32,9 @@
     height: 15px;
 }
 .buttonSet {
-    position: absolute;
-    top: 28rem;
-    right: 1rem;
+    position: fixed;
+    top: 33rem;
+    left:60rem
 }
 .buttonModal{
     background-color: #ffff;
