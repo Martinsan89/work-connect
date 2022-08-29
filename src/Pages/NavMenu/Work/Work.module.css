@@ -20,6 +20,8 @@
     font-size: 16px;
     font-weight: 300;
     color: #001A24;
+    display: flex;
+    gap: 10px;
 }
 .subtitle{
     font-family: Roboto;
@@ -33,9 +35,9 @@
     width: 70%;
 }
 .buttonSet {
-    position: absolute;
-    top: 28rem;
-    right: 1rem;
+    position: fixed;
+    top: 33rem;
+    left:60rem
 }
 .buttonModal{
     background-color: #ffff;

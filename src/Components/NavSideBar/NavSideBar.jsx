@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import styles from '../NavSideBar/NavSideBar.module.css'
+import React from 'react'
+import styles from './NavSideBar.module.css'
 import CV from './NavSideBarSvg/CvSvg'
 import Work from './NavSideBarSvg/WorkSvg'
 import Education from './NavSideBarSvg/EducationSvg'
@@ -29,7 +29,7 @@ export default function NavSideBar() {
                             <Work fill={isActive ? 'white' : 'black'} />
                         </div>
                         <div className={`${styles.title}`}>
-                            <p>Work Experience</p>
+                            <p style={{marginBottom:'0'}}>Work Experience</p>
                         </div>
                     </div>
                 )}
@@ -41,7 +41,7 @@ export default function NavSideBar() {
                             <Education fill={isActive ? 'white' : 'black'} />
                         </div>
                         <div className={`${styles.title}`}>
-                            <p>Education</p>
+                            <p style={{marginBottom:'0'}}>Education</p>
                         </div>
                     </div>
                 )}
@@ -53,7 +53,7 @@ export default function NavSideBar() {
                             <Language fill={isActive ? 'white' : 'black'} />
                         </div>
                         <div className={`${styles.title}`}>
-                            <p>Languages</p>
+                            <p style={{marginBottom:'0'}}>Languages</p>
                         </div>
                     </div>
                 )}
@@ -65,7 +65,7 @@ export default function NavSideBar() {
                             <CV fill={isActive ? 'white' : 'black'} />
                         </div>
                         <div className={`${styles.title}`}>
-                            <p>Curriculum Vitae</p>
+                            <p style={{marginBottom:'0'}}>Curriculum Vitae</p>
                         </div>
                     </div>
                 )}

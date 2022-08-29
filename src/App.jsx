@@ -1,6 +1,7 @@
 import './App.css'
 import NavSideBar from './Components/NavSideBar/NavSideBar'
 import { NavLink, Routes, Route} from 'react-router-dom'
+<<<<<<< HEAD
 import Work from './Pages/Work'
 import Education from './Pages/Education'
 import Curriculum from './Pages/Curriculum'
@@ -9,6 +10,13 @@ import Profile from './Components/NavSideBar/Profile/Profile'
 import Sidebar from './Components/NavSideBar/Sidebar/Sidebar'
 import Register from './Components/NavSideBar/Register/Register'
 import { useState } from 'react'
+=======
+import Work from './Pages/NavMenu/Work/Work'
+import Education from './Pages/NavMenu/Education/Education'
+import Curriculum from './Pages/NavMenu/CV/Curriculum'
+import Language from './Pages/NavMenu/Language/Languages'
+import Login from './Pages/Login/Login'
+>>>>>>> a5fc9d74b2ed3fd30e03936c5dc086a0d61625e2
 
 
 function App() {
@@ -17,6 +25,7 @@ function App() {
   return (
     <div>
       <div>
+<<<<<<< HEAD
 
         {/* ⬇️ setea profile como true para mostral el perfil de vuelta ⬇️ */}
         <NavLink 
@@ -37,6 +46,11 @@ function App() {
           profile ? <Profile/> : ''
         } */}
 
+=======
+        <NavLink to='/'>Home</NavLink>
+        <NavLink to='profile'>Profile</NavLink>
+        <NavLink to='login'>Login</NavLink>
+>>>>>>> a5fc9d74b2ed3fd30e03936c5dc086a0d61625e2
       </div>
       <Routes>
         <Route path="/register" element={<Register/>}/>
@@ -53,6 +67,7 @@ function App() {
           <Route path='language' element={<Language />}/>
           <Route path='sidebar' element={<Sidebar />}/>
         </Route>
+        <Route path='login' element={<Login />} />
       </Routes>
     </div>
   )
