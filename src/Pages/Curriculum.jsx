@@ -21,42 +21,42 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-      <Form>
-          <div className={`${styles.inputWork}`}>
-              <Form.Group style={{width: '100%'}} className="mb-3" controlId="formBasicEmail">
-                  <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>Company</Form.Label>
-                  <Form.Control style={{width: '90%', borderRadius: '1rem'}} type="email" placeholder="Sample Tech, Inc." />
-              </Form.Group>
-              <Form.Group style={{width: '100%'}} className="mb-3" controlId="formBasicPassword">
-                  <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>Assignment(s)</Form.Label>
-                  <Form.Label style={{fontWeight: '300'}}>(Seperate with comma)</Form.Label>
-                  <Form.Control style={{paddingLeft:'20px', width: '90%', borderRadius: '1rem'}} type="password" placeholder="Lead Developer" />
-              </Form.Group>
-          </div>
-          <Form.Group>
-              <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>Job description</Form.Label>
-              <Form.Control as="textarea" style={{paddingLeft:'20px', width: '100%', height:'86px', borderRadius: '1rem'}} type="password" placeholder="Lead Developer" />
-          </Form.Group>
-          <div className={`${styles.inputJobs}`}>
-              <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>From</Form.Label>
-              <Form.Select style={{width: '13%', padding:'8px', borderRadius:'1rem', marginLeft:'10px'}} aria-label="Default select example">
-                  <option>2020</option>
-              </Form.Select>
-              <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>Until</Form.Label>
-              <Form.Select style={{width: '13%', padding:'8px', borderRadius:'1rem', marginLeft:'10px'}} aria-label="Default select example">
-                  <option>...</option>
-              </Form.Select>
-              <Form.Group style={{marginLeft:'10px'}} controlId="formBasicCheckbox">
-                  <Form.Check type="radio" label="Still Working" />
-              </Form.Group>
-          </div>
-          <div>
-              <Button style={{padding:'1rem', backgroundColor:'#F14281', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', borderRadius:'3rem', lineHeight:'20px' }} type="submit">
-                  UPDATE
-              </Button>
-              <Button style={{padding:'1rem', backgroundColor:'white', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', borderRadius:'3rem', border: '2px solid #F14281', lineHeight:'20px', color:'#F14281', marginLeft:'10px'}} onClick={props.onHide}>CANCEL</Button>
-          </div>
-      </Form>
+        <Form>
+            <div className={`${styles.inputWork}`}>
+                <Form.Group style={{width: '100%'}} className="mb-3" controlId="formBasicEmail">
+                    <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>Company</Form.Label>
+                    <Form.Control style={{width: '90%', borderRadius: '1rem'}} type="email" placeholder="Sample Tech, Inc." />
+                </Form.Group>
+                <Form.Group style={{width: '100%'}} className="mb-3" controlId="formBasicPassword">
+                    <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>Assignment(s)</Form.Label>
+                    <Form.Label style={{fontWeight: '300'}}>(Seperate with comma)</Form.Label>
+                    <Form.Control style={{paddingLeft:'20px', width: '90%', borderRadius: '1rem'}} type="password" placeholder="Lead Developer" />
+                </Form.Group>
+            </div>
+            <Form.Group>
+                <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>Job description</Form.Label>
+                <Form.Control as="textarea" style={{paddingLeft:'20px', width: '100%', height:'86px', borderRadius: '1rem'}} type="password" placeholder="Lead Developer" />
+            </Form.Group>
+            <div className={`${styles.inputJobs}`}>
+                <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>From</Form.Label>
+                <Form.Select style={{width: '13%', padding:'8px', borderRadius:'1rem', marginLeft:'10px'}} aria-label="Default select example">
+                    <option>2020</option>
+                </Form.Select>
+                <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>Until</Form.Label>
+                <Form.Select style={{width: '13%', padding:'8px', borderRadius:'1rem', marginLeft:'10px'}} aria-label="Default select example">
+                    <option>...</option>
+                </Form.Select>
+                <Form.Group style={{marginLeft:'10px'}} controlId="formBasicCheckbox">
+                    <Form.Check type="radio" label="Still Working" />
+                </Form.Group>
+            </div>
+            <div>
+                <Button style={{padding:'1rem', backgroundColor:'#F14281', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', borderRadius:'3rem', lineHeight:'20px' }} type="submit">
+                    UPDATE
+                </Button>
+                <Button style={{padding:'1rem', backgroundColor:'white', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', borderRadius:'3rem', border: '2px solid #F14281', lineHeight:'20px', color:'#F14281', marginLeft:'10px'}} onClick={props.onHide}>CANCEL</Button>
+            </div>
+        </Form>
       </Modal.Body>
     </Modal>
   );

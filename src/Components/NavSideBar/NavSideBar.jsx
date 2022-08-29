@@ -7,8 +7,6 @@ import Language from './NavSideBarSvg/LanguageSvg'
 import {NavLink, Outlet} from 'react-router-dom'
 
 
-
-
 export default function NavSideBar() {
 
     const navLinkStyle = ({ isActive }) => {

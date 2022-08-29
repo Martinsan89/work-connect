@@ -28,7 +28,7 @@ function MyVerticallyCenteredModal(props) {
               </Form.Group>
               <Form.Group style={{width: '100%'}} className="mb-3" controlId="formBasicPassword">
                   <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>Assignment(s)</Form.Label>
-                  <Form.Label style={{fontWeight: '300'}}>(Seperate with comma)</Form.Label>
+                  <Form.Label style={{fontWeight: '300'}}>(Separate with comma)</Form.Label>
                   <Form.Control style={{paddingLeft:'20px', width: '90%', borderRadius: '1rem'}} type="password" placeholder="Lead Developer" />
               </Form.Group>
           </div>
@@ -60,6 +60,7 @@ function MyVerticallyCenteredModal(props) {
     </Modal>
   );
 }
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "toggleEdit":
@@ -78,7 +79,7 @@ export default function Work() {
 
 
   return (
-    <div>
+    <div className={ `${ styles.mainDiv }` }>
       <div className={`${styles.educationTag}`}>
         <div className={`${styles.educationTitle}`}>
           <div className={`${styles.tagTitle}`}>

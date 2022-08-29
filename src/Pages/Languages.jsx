@@ -78,7 +78,7 @@ export default function Languages() {
   const [modalShow, setModalShow] = useState(false);
   const [state, dispatch] = useReducer(reducer, {showEditIcons:false, showEdit:true, showEditButtons:false })
   return (
-    <div >
+    <div>
       <div className={`${styles.tagLanguage}`}>
         <div>
           <img src={Holland} alt="flag" className={`${styles.flag}`} />

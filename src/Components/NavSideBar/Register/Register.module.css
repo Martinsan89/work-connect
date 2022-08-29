@@ -1,0 +1,184 @@
+*:root {
+    --main-blue: #107ACC;
+    --light-blue: #2898EE;
+    --dark-blue: #142157;
+    --light-gray: #EAEBEE;
+    --dark-gray: #B3B1B4;
+    --magenta: #F14281;
+}
+
+.mainDiv {
+    background-image: url(../../../assets/Register/BG-Photo.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.registerCard {
+    position: relative;
+    top: 10rem;
+    background-color: #FFFFFF;
+    width: 700px;
+    height: 460px;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.registerTitle {
+    text-align: center;
+    padding-top: 2rem;
+    color: var(--main-blue);
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.registerSubTitle {
+    text-align: center;
+    color: #001A24;
+    font-weight: 300;
+}
+
+.cardButtonsDiv {
+    display: flex;
+    column-gap: 3.5rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.companyButton {
+    border: none;
+    background-color: var(--light-blue);
+    width: 128px;
+    height: 104px;
+    border-radius: 16px;
+}
+
+    .captionCompanyButton{
+        text-align: center;
+        padding-top: 0.5rem;
+        font-weight: 300;
+        font-size: 19px;
+    }
+
+.freelancerButton {
+    border: none;
+    background-color: var(--light-gray);
+    width: 128px;
+    height: 104px;
+    border-radius: 16px;
+}
+
+    .captionFreelancerButton {
+        text-align: center;
+        padding-top: 0.5rem;
+        font-weight: 300;
+        font-size: 19px;
+    }
+
+.personButton {
+    border: none;
+    background-color: var(--light-gray);
+    width: 128px;
+    height: 104px;
+    border-radius: 16px;
+}
+
+    .captionPersonButton {
+        text-align: center;
+        padding-top: 0.5rem;
+        font-weight: 300;
+        font-size: 19px;
+    }
+
+.spanCardForm {
+    margin-top: 0.5rem;
+    position: relative;
+    right: 1.5rem;
+}
+
+.formSelectCard {
+    position: relative;
+    right: 2.5rem;
+    font-weight: 300;
+}
+
+.spanSelect {
+    color: var(--dark-gray) !important;
+}
+
+.continueCardButton {
+    border: none;
+    position: relative;
+    bottom: 0.1rem;
+    left: 1rem;
+    background-color: var(--magenta);
+    color: #FFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0.6rem 2.8rem;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 32px;
+}
+
+.insideFooterCard {
+    text-align: center;
+    position: relative;
+    top: 3.25rem;
+    padding: 0.1rem 0;
+    background-color: var(--main-blue);
+    border-radius: 0 0 16px 16px;
+}
+
+.insideFooterText {
+    margin-top: 1rem;
+    color: #FFFF;
+}
+
+.insideFooterSpan {
+    font-weight: bold;
+    margin-left: 0.2rem;
+    color: #FFFF;
+}
+
+.insideFooterLogin {
+    color: #FFFF;
+    text-decoration: none;
+}
+
+.insideFooterLogin:hover {
+    color: #FFFF;
+}
+
+.footer {
+    background-color: var(--main-blue);
+    height: 12rem;
+    margin-top: -3rem;
+}
+
+.footerLogo {
+    margin-top: 3rem;
+}
+
+.footerText {
+    margin-top: 2rem;
+}
+
+.footerLink {
+    color: #FFFF;
+    text-decoration: none;
+}
+
+.footerLink:hover {
+    color: #FFFF;
+}
+
+.copyrightDiv {
+    background-color: var(--dark-blue);
+    height: 3rem;
+}
+
+.copyrightText {
+    color: #FFFF;
+    text-align: center;
+    padding-top: 0.6rem;
+}

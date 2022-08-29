@@ -4,14 +4,19 @@
   align-items: flex-start;
 }
 .navbar {
+  /* width: 280px;
+  height: 548px; */
   width: 280px;
-  height: 548px;
+  height: 400px;
   list-style: none;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 16px;
   margin-top: 3rem;
   margin-left: 3rem;
   background-color: #ffff;
+  position: relative;
+  top: 21rem;
+  left: 16rem;
 }
 .tagNav {
   display: flex;
@@ -55,12 +60,14 @@
   padding: 1rem;
   margin-top: 3rem;
   width: 800px;
-  height: 546px;
+  height: 400px;
   border-radius: 16px;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
   overflow-y: scroll;
   background-color: #ffff;
   position: relative;
+  top: 21rem;
+  left: 16.2rem;
 }
 
 
