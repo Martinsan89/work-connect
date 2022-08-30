@@ -5,6 +5,7 @@ import Work from './NavSideBarSvg/WorkSvg'
 import Education from './NavSideBarSvg/EducationSvg'
 import Language from './NavSideBarSvg/LanguageSvg'
 import {NavLink, Outlet} from 'react-router-dom'
+import Profile from './Components/NavSideBar/Profile/Profile'
 
 
 export default function NavSideBar() {
@@ -16,11 +17,11 @@ export default function NavSideBar() {
         }
     } 
 
-    
-
-
   return (
     <div className={`${styles.navSection}`}>
+        <div>
+          <Profile />
+        </div>
         <div className={`${styles.navbar}`} >
             <NavLink style={navLinkStyle} to='work' className={`${styles.itemTop}`}>
                 {({isActive}) => (
