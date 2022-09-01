@@ -2,18 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { configureStore} from '@reduxjs/toolkit'
 import { Provider} from 'react-redux'
-
 import worksReducer from './features/WorkFeatures'
 import educationsReducer from './features/EducationFeature'
 import languagesReducer from './features/LanguageFeature'
 import cvsReducer from './features/CVFeature'
-
-
 
 const store = configureStore({
   reducer: {
