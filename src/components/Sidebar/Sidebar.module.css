@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.divContenedor {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 270px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    /* Values/Light */
+
+    border-right: 2px solid #E5EEF2;
+    border-radius: 0px 16px 16px 0px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.logo p{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.divFlex {
+    display: flex;
+    cursor: pointer;
+}
+
+.divFlex p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    letter-spacing: 0.1px;
+
+    /* Black / High Emphasis */
+
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 18px;
+}
+
+/* background-color: #F60C87; */
+/* .divFlex:hover{
+    background-color: #142157;
+} */
+
+/* .divFlex:hover p{
+    color: white;
+} */
+
+.divFlex:hover .icons{
+    color: white;
+    fill: #E5EEF2;
+}
+
+.iconLogo {
+    width: 40px;
+    height: 35px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.icons {
+    margin: 15px 50px 0px 40px !important;
+}
+
+.hr {
+    height: 3px;
+    background-color: #E5EEF2;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.settings {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* or 136% */
+
+    letter-spacing: 0.5px;
+
+    /* Values/Dark */
+    text-align: left;
+    margin-left: 40px;
+    color: #797D80;
+}
+
+.navLinkTop {
+        padding: 0.5rem;
+        text-decoration: none;
+        color: black;
+        border-radius: 15px 15px 0px 0px;
+}
+.navLink {
+        padding: 0.5rem;
+        text-decoration: none;
+        color: black;
+}
+.navLinkBottom {
+        padding: 0.5rem;
+        text-decoration: none;
+        color: black;
+        border-radius: 0px 0px 15px 15px;
+}

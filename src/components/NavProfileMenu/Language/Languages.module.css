@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.tagLanguage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1.6px solid #EAEBEE;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+.flag {
+    border-radius: 3rem;
+    width: 60px;
+    height: 60px;
+}
+.text{
+    padding-left: 1rem;
+    font-family: Roboto;
+    font-weight: 300;
+    margin-right: 29rem;
+}
+.flagName{
+    font-size: 19px;
+}
+.flagLevel{
+    font-size: 16px;
+    padding-top: .5rem;
+}
+.star{
+    width: 15px;
+    height: 15px;
+}
+.buttonSet {
+    position: fixed;
+    top: 45rem;
+    right: 6%;
+}
+.buttonModal{
+    background-color: #ffff;
+    border: none;
+}
+
+.imgButton {
+width: 80px;
+height: 80px;
+}
+
+.inputWork{
+    display: flex;
+    gap: 1rem;
+}
+
+.inputJobs{
+    margin: 1rem 0;
+    display: flex;
+    align-items: baseline;
+}

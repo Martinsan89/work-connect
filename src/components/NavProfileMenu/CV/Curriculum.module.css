@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.tagCV{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1.6px solid #EAEBEE;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+.cv {
+    width: 60px;
+    height: 60px;
+}
+.textCV{
+    font-family: Roboto;
+    font-weight: 300;
+    margin-right: 20rem;
+}
+.cvName{
+    font-size: 19px;
+    font-weight: 300;
+}
+.cvLevel{
+    font-size: 16px;
+    padding-top: .5rem;
+    font-weight: 500;
+}
+.tagEye{
+    width: 30%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.eye{
+    width: 22px;
+    height: 17px;
+}
+.eyeText{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: #107ACC;
+    padding-left: 10px;
+}
+
+.buttonSet {
+    position: fixed;
+    top: 45rem;
+    right: 6%;
+}
+.buttonModal{
+    background-color: #ffff;
+    border: none;
+}
+
+.imgButton {
+width: 80px;
+height: 80px;
+}
+
+.inputWork{
+    display: flex;
+    gap: 1rem;
+}
+
+.inputJobs{
+    margin: 1rem 0;
+    display: flex;
+    align-items: baseline;
+}

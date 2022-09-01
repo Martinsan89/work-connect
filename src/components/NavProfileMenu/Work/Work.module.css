@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.educationTag {
+    border-bottom: 1px solid #EAEBEE;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.educationTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.tagTitle{
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 300;
+    color: #107ACC;
+}
+.tagDate {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    color: #001A24;
+    display: flex;
+    gap: 10px;
+}
+.subtitle{
+    font-family: Roboto;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+.text {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+    width: 70%;
+}
+.buttonSet {
+    position: fixed;
+    top: 45rem;
+    right: 6%;
+}
+.buttonModal{
+    background-color: #ffff;
+    border: none;
+}
+
+.imgButton {
+width: 80px;
+height: 80px;
+}
+
+.inputWork{
+    display: flex;
+    gap: 1rem;
+}
+
+.inputJobs{
+    margin: 1rem 0;
+    display: flex;
+    align-items: baseline;
+}
