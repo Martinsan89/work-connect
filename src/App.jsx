@@ -10,6 +10,9 @@ import Work from './components/NavProfileMenu/Work/Work'
 import Education from './components/NavProfileMenu/Education/Education'
 import Curriculum from './components/NavProfileMenu/CV/Curriculum'
 import Language from './components/NavProfileMenu/Language/Languages'
+import Sidebar from './Components/Sidebar/Sidebar'
+import Notifications from './Components/Notifications/Notifications'
+import Chat from './Components/Chat/Chat'
 
 const App = () => {
   return (
@@ -19,11 +22,13 @@ const App = () => {
       <Route path='register' element={<Register />} />
       <Route path='home' element={<Home />}>
         <Route path='advertisements' element={<Advertisements/>}/>
+        <Route path='notifications' element={<Notifications />}/>
+        <Route path='inbox' element={<Chat />}/>
         <Route path='profile' element={<ProfileView/>}>
           <Route path='work' element={<Work />}/>
           <Route path='education' element={<Education />}/>
           <Route path='curriculum' element={<Curriculum />}/>
-          <Route path='language' element={<Language />}/> 
+          <Route path='language' element={<Language />}/>
         </Route>
       </Route>
     </Routes>
