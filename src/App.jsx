@@ -37,7 +37,7 @@ function App() {
           <Route path='curriculum' element={<Curriculum />}/>
           <Route path='language' element={<Language />}/>
         </Route>
-      </Routes>
+      </Routes> 
     </div>
   )
 }
