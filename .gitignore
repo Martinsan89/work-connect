@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+src/Pages/Curriculum.jsx
+src/Pages/Languages.jsx
+src/Pages/Work.jsx
