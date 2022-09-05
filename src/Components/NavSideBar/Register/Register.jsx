@@ -6,11 +6,18 @@ import Elipse from '../../../assets/Register/Elipse.svg'
 import Company from '../../../assets/Register/CompanyIcon.svg'
 import CompanyGray from '../../../assets/Register/CompanyGrayIcon.svg'
 import Freelancer from '../../../assets/Register/FreelancerIcon.svg'
+import FreelancerWhite from '../../../assets/Register/FreelancerWhite.svg'
 import Person from '../../../assets/Register/PersonIcon.svg'
+import PersonWhite from '../../../assets/Register/PersonWhite.svg'
 import { Form } from 'react-bootstrap'
+import { Navigate } from 'react-router-dom'
 
 
 const Register = () => {
+
+    const [business, setBusiness] = useState(false)
+    const [freelancer, setFreelancer] = useState(false)
+    const [privateUser, setPrivateUser] = useState(false)
     
     const [companyButton, setCompanyButton] = useState(true)
     const [freelaButton, setFreelaButton] =useState(false)
@@ -53,7 +60,9 @@ const Register = () => {
                             onClick={ () => { setCompanyButton(false); setFreelaButton(true); setPersonButton(false) } }
                             style={ freelaButton ? { backgroundColor: '#2898EE' } : { backgroundColor: '#EAEBEE' } }
                             className={ styles.freelancerButton }>
-                            <img src={ Freelancer } alt="Freelancer Icon" />
+                            <img 
+                                src={ freelaButton ? FreelancerWhite : Freelancer} 
+                                alt="Freelancer Icon" />
                         </button>
                         <figcaption 
                             style={ freelaButton ? { color: '#107ACC' } : { color: '#B3B1B4' } }
@@ -66,7 +75,9 @@ const Register = () => {
                             onClick={ () => { setCompanyButton(false); setFreelaButton(false); setPersonButton(true) } }
                             style={ personButon ? { backgroundColor: '#2898EE' } : { backgroundColor: '#EAEBEE' } }
                             className={ styles.personButton }>
-                            <img src={ Person } alt="Person Icon" />
+                            <img 
+                                src={ personButon ? PersonWhite : Person } 
+                                alt="Person Icon" />
                         </button>
                         <figcaption 
                             style={ personButon ? { color: '#107ACC' } : { color: '#B3B1B4' } }
@@ -86,7 +97,9 @@ const Register = () => {
                             Select
                         </option>  
                     </Form.Select>
-                    <button className={styles.continueCardButton}>
+                    <button 
+                        onClick={ companyButton ? () => { setBusiness(true) } : '' }
+                        className={styles.continueCardButton}>
                         continue
                     </button>
                 </div>

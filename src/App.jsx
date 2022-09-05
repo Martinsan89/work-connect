@@ -17,6 +17,13 @@ import Curriculum from './Pages/NavMenu/CV/Curriculum'
 import Language from './Pages/NavMenu/Language/Languages'
 import Login from './Pages/Login/Login'
 import CreateNewAccount from './Components/NavSideBar/CreateNewAccount/CreateNewAccount'
+import CreatedSuccessfully from './Components/NavSideBar/CreatedSuccessfully/CreatedSuccessfully'
+import VerifyAccount from './Components/NavSideBar/VerifyAccount/VerifyAccount'
+import AccountVerified from './Components/NavSideBar/AccountVerified/AccountVerified'
+import RestorePassword from './Components/NavSideBar/RestorePassword/RestorePassword'
+import RestoreSent from './Components/NavSideBar/RestoreSent/RestoreSent'
+import NewPassword from './Components/NavSideBar/NewPassword/NewPassword'
+import NewPasswordDone from './Components/NavSideBar/NewPasswordDone/NewPasswordDone'
 // >>>>>>> a5fc9d74b2ed3fd30e03936c5dc086a0d61625e2
 
 function App() {
@@ -28,6 +35,7 @@ function App() {
 
           {/* ⬇️ setea profile como true para mostrar el perfil ⬇️ */}
           <NavLink 
+            className='mx-3'
             onClick={ () => {setProfile(true)} }
             to='/'>
               Home 
@@ -47,13 +55,27 @@ function App() {
 
           {/* <NavLink to='/'>Home</NavLink>  */}
           {/* <NavLink to='profile'>Profile</NavLink> */}
-          <NavLink onClick={ () => { setProfile(false) } } to='login'>Login</NavLink>
-          <NavLink onClick={ () => { setProfile(false) } } to='createnewaccount'>NewAccount</NavLink>
+          <NavLink className='ms-3' onClick={ () => { setProfile(false) } } to='/login'>Login</NavLink>
+          <NavLink className='mx-3' onClick={ () => { setProfile(false) } } to='/createnewaccount'>NewAccount</NavLink>
+          <NavLink onClick={ () => { setProfile(false) } } to='usercreated'>UserCreated</NavLink>
+          <NavLink className='mx-3' onClick={ () => { setProfile(false) } } to='/verifyaccount'>VerifyAccount</NavLink>
+          <NavLink onClick={ () => { setProfile(false) } } to='/verified'>Verified</NavLink>
+          <NavLink className='mx-3' onClick={ () => { setProfile(false) } } to='/restorepassword'>Restore Pass</NavLink>
+          <NavLink onClick={ () => { setProfile(false) } } to='/passrestored'>Restored</NavLink>
+          <NavLink className='mx-3' onClick={ () => { setProfile(false) } } to='/newpassword'>NewPassword</NavLink>
+          <NavLink onClick={ () => { setProfile(false) } } to='/passwasreset'>Password was Reset</NavLink>
         </div>
 
         <Routes>
           <Route path="/register" element={<Register/>}/>
           <Route path="/createnewaccount" element={<CreateNewAccount />}/>
+          <Route path="/usercreated" element={<CreatedSuccessfully />}/>
+          <Route path="/verifyaccount" element={<VerifyAccount />}/>
+          <Route path="/verified" element={<AccountVerified />}/>
+          <Route path="/restorepassword" element={<RestorePassword />}/>
+          <Route path="/passrestored" element={<RestoreSent />}/>
+          <Route path="/newpassword" element={<NewPassword />}/>
+          <Route path="/passwasreset" element={<NewPasswordDone />}/>
           <Route path="/" element={<NavSideBar/>}>
             <Route path='work' element={<Work />}/>
             <Route path='education' element={<Education />}/>

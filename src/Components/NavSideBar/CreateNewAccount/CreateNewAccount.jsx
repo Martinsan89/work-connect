@@ -3,18 +3,20 @@ import styles from './CreateNewAccount.module.css'
 import logo from '../../../assets/Register/LogoWorkConnect.svg'
 import Vector from '../../../assets/Register/Vector.svg'
 import Elipse from '../../../assets/Register/Elipse.svg'
-import Company from '../../../assets/Register/CompanyIcon.svg'
-import CompanyGray from '../../../assets/Register/CompanyGrayIcon.svg'
-import Freelancer from '../../../assets/Register/FreelancerIcon.svg'
-import Person from '../../../assets/Register/PersonIcon.svg'
-import { Form } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
+import AccountDataForm from './AccountDataForm' 
+import AboutYouForm from './AboutYouForm' // Company
+import AboutYouFreeForm from './AboutYouFreeForm' // Freelancer
+import AboutYouPersonForm from './AboutYouPersonForm' // Private User
+import ProfileDataForm from './ProfileDataForm' // Company
+import ProfileDataFyPForm from './ProfileDataFyPForm' // Freelancer & Private User
 
 
 const CreateNewAccount = () => {
 
-    const [companyButton, setCompanyButton] = useState(true)
-    const [freelaButton, setFreelaButton] =useState(false)
-    const [personButon, setPersonButton] = useState(false)
+    const [accountData, setAccountData] = useState(true)
+    const [aboutYou, setAboutYou] = useState(false)
+    const [profileData, setProfileData] = useState(false)
 
   return (
     <>
@@ -31,12 +33,56 @@ const CreateNewAccount = () => {
 
             <div className={ styles.registerCard }>
                 <h2 className= { styles.registerTitle }>Create New Account</h2>
+                {/* ⬇️ Acá va la barra de navegación. Probar Router ⬇️ */}
                 <div className={ styles.cardButtonsDiv }>
-                    
+                    <span
+                        onClick={ () => { setAccountData(true); setAboutYou(false); setProfileData(false) } }
+                        style={ accountData ? { backgroundColor: '#2898EE', color: 'white', padding: '1rem 2.5rem', marginLeft: '-1rem', borderRadius: '42px', cursor: 'pointer'} : { color: '#B3B1B4', padding: '1rem 2.5rem', marginLeft: '-1rem', borderRadius: '42px', cursor: 'pointer'} } 
+                        className= ''>
+                            <span 
+                            style={ accountData ? { border: 'solid', borderRadius: '50%', padding: '0.1rem 0.4rem', marginRight: '0.5rem' } : { border: 'solid #B3B1B4', borderRadius: '50%', padding: '0.1rem 0.4rem', marginRight: '0.5rem', backgroundColor: '#B3B1B4', color: '#FFFFFF' } }>
+                                1
+                            </span>
+                            Account Data
+                    </span>
+                    <span 
+                        onClick={ () => { setAccountData(false); setAboutYou(true); setProfileData(false) } }
+                        style={ aboutYou ? { backgroundColor: '#2898EE', color: 'white', padding: '1rem 3rem', borderRadius: '42px', position: 'relative', left: '0.75rem', cursor: 'pointer' } : {padding: '1rem 3rem', color: '#B3B1B4', borderRadius: '42px', position: 'relative', left: '0.75rem', cursor: 'pointer'} } 
+                        className= ''>
+                            <span style={ aboutYou ? { border: 'solid', borderRadius: '50%', padding: '0.1rem 0.4rem', marginRight: '0.5rem' } : { border: 'solid #B3B1B4', borderRadius: '50%', padding: '0.1rem 0.4rem', marginRight: '0.5rem', backgroundColor: '#B3B1B4', color: '#FFFFFF' } }>
+                                2
+                            </span>
+                            About You
+                    </span>
+                    <span 
+                        onClick={ () => { setAccountData(false); setAboutYou(false); setProfileData(true) } }
+                        style={ profileData ? { backgroundColor: '#2898EE', color: 'white', padding: '1rem 3rem', position: 'relative', left: '1.4rem', borderRadius: '42px' } : {padding: '1rem 3rem', color: '#B3B1B4', cursor: 'pointer', position: 'relative', left: '1.4rem'} }
+                        className= ''>
+                            <span style={ profileData ? { border: 'solid', borderRadius: '50%', padding: '0.1rem 0.4rem', marginRight: '0.5rem' } : { border: 'solid #B3B1B4', borderRadius: '50%', padding: '0.1rem 0.4rem', marginRight: '0.5rem', backgroundColor: '#B3B1B4', color: '#FFFFFF' } }>
+                                3
+                            </span>
+                            Profile Data
+                    </span>
                 </div>
                 
-                <div className='d-flex pt-5 justify-content-center gap-4'>
-                    
+                <div className='ms-4 mt-4'>
+                    {
+                        accountData ? <AccountDataForm /> : aboutYou ? <AboutYouForm /> : <ProfileDataForm />
+                    }
+                </div>
+                <div className='mb-3' style={ accountData || aboutYou ? { marginTop: '0rem', paddingTop: '2rem', textAlign: 'center'} : { marginTop: '0rem', paddingTop: '0rem', textAlign: 'center'} } >
+                    <Button 
+                        style={{padding:'1rem', backgroundColor:'#142157', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', borderRadius:'3rem', border: 'none', lineHeight:'20px', color:'#FFFFFF', marginRight:'10px', marginLeft: '-1.5rem'}} 
+                        onClick={ () => {props.onHide(); setPersonalData(true); setContactData(false); setSettingsModal(false)}  }>
+                            CANCEL
+                    </Button>
+                    <Button 
+                        style={{padding:'1rem', backgroundColor:'#F14281', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', border: 'none', borderRadius:'3rem', lineHeight:'20px' }} 
+                        type="submit">
+                            {
+                                accountData ? 'NEXT' : aboutYou ? 'NEXT' : 'DONE'
+                            }
+                    </Button>
                 </div>
 
                 
