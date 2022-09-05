@@ -6,7 +6,7 @@ import Profile from './icons/Profile.jsx'
 import Logout from './icons/Logout.jsx'
 import Inbox from './icons/Inbox.jsx'
 import Notifications from './icons/Notifications.jsx'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 
 
 const Sidebar = () => {
@@ -14,7 +14,7 @@ const Sidebar = () => {
     const navLinkStyle = ({ isActive }) => {
         return {
             color: isActive ? 'white' : '#001A24',
-            backgroundColor: isActive ? '#142157' : 'white'
+            backgroundColor: isActive ? '#107ACC' : 'white'
         }
     } 
  
@@ -35,7 +35,7 @@ const Sidebar = () => {
                 </div>
                 )}
             </NavLink>
-            <NavLink style={navLinkStyle} to='Notifications' className={styles.navLink}> 
+            <NavLink style={navLinkStyle} to='notifications' className={styles.navLink}> 
                 {({isActive}) => (
                     <div className={styles.divFlex}>
                     <div className={styles.icons}>
@@ -85,6 +85,9 @@ const Sidebar = () => {
                 </div>
                 )}
             </NavLink>
+        </div>
+        <div className={`${styles.outlet}`}>
+            <Outlet />
         </div>
     </div>
   )
