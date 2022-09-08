@@ -1,11 +1,20 @@
 import React from 'react'
-import styles from './VerifyAccount.module.css'
-import logo from '../../../assets/Register/LogoWorkConnect.svg'
-import Vector from '../../../assets/Register/Vector.svg'
-import Elipse from '../../../assets/Register/Elipse.svg'
-import { Form } from 'react-bootstrap'
+import styles from './AccountVerified.module.css'
+import logo from '../../assets/Register/LogoWorkConnect.svg'
+import Vector from '../../assets/Register/Vector.svg'
+import Elipse from '../../assets/Register/Elipse.svg'
+import { Button } from 'react-bootstrap'
+import { Navigate } from 'react-router-dom'
+import { useState } from 'react'
 
-const VerifyAccount = () => {
+const AccountVerified = () => {
+
+    const [goLogin, setGoLogin] = useState(false)
+
+    if ( goLogin ) {
+        return <Navigate to = "/" />
+    }
+
   return (
     <>
         <div className= { styles.mainDiv }>
@@ -20,20 +29,18 @@ const VerifyAccount = () => {
 			</div>
 
             <div className={ styles.registerCard }>
-                <h2 className= { styles.registerTitle }>Verify Account</h2>
-                <p className= { styles.registerSubTitle }>Please enter your verification code below</p>
-                <Form>
-                    <div className=''>
-                        <Form.Group style={{width: '100%'}} className="mb-4" controlId="formBasicNumber">
-                            <Form.Control 
-                                style={{width: '70%', margin: '0 auto', marginTop: '2rem', paddingLeft: '1.6rem', borderRadius: '1rem', color: '#B3B1B4', fontWeight: '300'}}
-                                className= { styles.inputCodeForm } 
-                                type="text" 
-                                placeholder= 'Your code here'
-                            />
-                        </Form.Group>
-                    </div>
-                </Form>
+                <h2 className= { styles.registerTitle }>Account verified correctly!</h2>
+                <p className= { styles.registerSubTitle }>We have verified your data, now you can login to your account</p>
+
+                <div className='mb-3' style={ { marginTop: '0rem', paddingTop: '2rem', textAlign: 'center'} } >
+                    <Button 
+                        style={{padding:'1rem', backgroundColor:'#F14281', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', border: 'none', borderRadius:'3rem', lineHeight:'20px' }} 
+                        type="submit"
+                        onClick={ () => { setGoLogin(true) } }
+                    >
+                            LOGIN
+                    </Button>
+                </div>
             </div>
         </div>
         <footer className={ styles.footer }>
@@ -53,4 +60,4 @@ const VerifyAccount = () => {
   )
 }
 
-export default VerifyAccount
+export default AccountVerified

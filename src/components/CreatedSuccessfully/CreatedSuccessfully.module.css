@@ -8,7 +8,7 @@
 }
 
 .mainDiv {
-    background-image: url(../../../assets/Register/BG-Photo.svg);
+    background-image: url(../../assets/Register/BG-Photo.svg);
     background-repeat: no-repeat;
     height: 100vh;
 }
@@ -26,7 +26,7 @@
 
 .registerTitle {
     text-align: center;
-    padding-top: 3.2rem;
+    padding-top: 5rem;
     color: var(--main-blue);
     font-weight: bold;
     font-size: 42px;
@@ -39,7 +39,10 @@
     color: #001A24;
     font-weight: 300;
     font-size: 16px;
-    margin-top: 1rem;
+}
+
+.cardButtonsDiv {
+    
 }
 
 .footer {

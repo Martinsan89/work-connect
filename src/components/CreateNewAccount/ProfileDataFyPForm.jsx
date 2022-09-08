@@ -1,19 +1,20 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
 import styles from './CreateNewAccount.module.css'
-import Work from '../../../assets/Register/Work.svg'
-import LinkedIn from '../../../assets/Register/LinkedIn.svg'
-import Text from '../../../assets/Register/Text.svg'
+import Work from '../../assets/Register/Work.svg'
+import LinkedIn from '../../assets/Register/LinkedIn.svg'
+import Text from '../../assets/Register/Text.svg'
 
-const ProfileDataForm = () => {
+const ProfileDataFyPForm = () => {
   return (
     <Form>
         <div className={`d-flex`}>
             <Form.Group style={{width: '100%'}} className="mb-4" controlId="formBasicNumber">
-                <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}} className='mb-3'>
+                <Form.Label style={{fontWeight: '500', paddingLeft: '5px', marginRight: '0.3rem'}} className='mb-3'>
                     <img className='me-3' src={ Work } alt="Business Icon" />
-                    Business Type
+                    Profession(s)
                 </Form.Label>
+                <Form.Label style={{fontWeight: '300'}}>(Separate with comma)</Form.Label>
                 <Form.Control 
                     style={{width: '90%', borderRadius: '1rem', color: '#B3B1B4', fontWeight: '300'}} 
                     type="text" 
@@ -41,4 +42,4 @@ const ProfileDataForm = () => {
   )
 }
 
-export default ProfileDataForm
+export default ProfileDataFyPForm

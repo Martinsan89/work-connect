@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './CreatedSuccessfully.module.css'
-import logo from '../../../assets/Register/LogoWorkConnect.svg'
-import Vector from '../../../assets/Register/Vector.svg'
-import Elipse from '../../../assets/Register/Elipse.svg'
+import logo from '../../assets/Register/LogoWorkConnect.svg'
+import Vector from '../../assets/Register/Vector.svg'
+import Elipse from '../../assets/Register/Elipse.svg'
 
 const CreatedSuccessfully = () => {
   return (

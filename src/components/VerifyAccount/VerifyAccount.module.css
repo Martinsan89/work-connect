@@ -8,17 +8,18 @@
 }
 
 .mainDiv {
-    background-image: url(../../../assets/Register/BG-Photo.svg);
+    background-image: url(../../assets/Register/BG-Photo.svg);
     background-repeat: no-repeat;
     height: 100vh;
 }
 
 .registerCard {
     position: relative;
-    top: 10rem;
+    top: 15rem;
     background-color: #FFFFFF;
     width: 700px;
-    height: 460px;
+    /* height: 265px; */
+    height: 300px;
     margin: 0 auto;
     border-radius: 16px;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
@@ -26,19 +27,35 @@
 
 .registerTitle {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 3.2rem;
     color: var(--main-blue);
     font-weight: bold;
-    font-size: 24px;
+    font-size: 42px;
 }
 
-.cardButtonsDiv {
-    width: 40rem;
+.registerSubTitle {
+    width: 23rem;
     margin: 0 auto;
-    border: 2px solid #EAEBEE;
-    border-radius: 42px;
-    padding: 0.8rem;
+    text-align: center;
+    color: #001A24;
     font-weight: 300;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.submitButton {
+    padding: 1rem;
+    background-color: #F14281; 
+    width: 160px; 
+    height: 52px; 
+    font-size: 14px; 
+    font-weight: 400; 
+    border: none; 
+    border-radius: 3rem; 
+    line-height: 20px ;
+    color: #FFFF;
+    text-transform: uppercase;
+    position: relative;
 }
 
 .footer {

@@ -15,7 +15,7 @@ function Login() {
 	const [passwordType, setPasswordType] = useState("password");
 	const [passwordInput, setPasswordInput] = useState("");
 	const [goToHome, setGoToHome] = useState(false);
-  const [goToRegister, setGoToRegister] = useState(false);
+	const [goToRegister, setGoToRegister] = useState(false);
 
 	if(goToHome){
     return <Navigate to='/home'/>
