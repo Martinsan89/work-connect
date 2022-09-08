@@ -36,6 +36,7 @@
     text-align: center;
     color: #001A24;
     font-weight: 300;
+    font-size: 16px;
 }
 
 .cardButtonsDiv {
@@ -47,7 +48,6 @@
 
 .companyButton {
     border: none;
-    background-color: var(--light-blue);
     width: 128px;
     height: 104px;
     border-radius: 16px;
@@ -132,6 +132,7 @@
 .insideFooterText {
     margin-top: 1rem;
     color: #FFFF;
+    font-weight: 300;
 }
 
 .insideFooterSpan {
@@ -166,6 +167,7 @@
 .footerLink {
     color: #FFFF;
     text-decoration: none;
+    font-weight: 300;
 }
 
 .footerLink:hover {
@@ -180,5 +182,7 @@
 .copyrightText {
     color: #FFFF;
     text-align: center;
-    padding-top: 0.6rem;
+    padding-top: 0.8rem;
+    font-weight: 400;
+    font-size: 14px;
 }

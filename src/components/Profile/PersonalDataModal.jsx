@@ -1,16 +1,35 @@
 import { Modal, Button, Form } from 'react-bootstrap'
 import styles from './Profile.module.css'
 import { useState } from 'react';
+<<<<<<< HEAD:src/Components/NavSideBar/Profile/PersonalDataModal.jsx
+import blackEdit from '../../../assets/Buttons/blackEditButton.svg'
+import lock from '../../../assets/Buttons/LockIcon.svg'
+import info from '../../../assets/Buttons/info.svg'
+import trash from '../../../assets/Buttons/trash.svg'
+import Eye from '../../../assets/Profile/Eye.svg'
+import Eyeclose from '../../../assets/Profile/EyeClose.svg'
+=======
 import blackEdit from '../../assets/Buttons/blackEditButton.svg'
 import lock from '../../assets/Buttons/LockIcon.svg'
 import info from '../../assets/Buttons/info.svg'
 import trash from '../../assets/Buttons/trash.svg'
+>>>>>>> 9da6dc84b9e31b7a6c064d2ee33c57f599bd9bac:src/components/Profile/PersonalDataModal.jsx
 
 export default function PersonalDataModal(props) {
   const [personalData, setPersonalData] = useState(true);
   const [contactData, setContactData] = useState(false);
   const [settingsModal, setSettingsModal] = useState(false);
   const [deleteAccount, setDeleteAccount] = useState(false);
+
+  const [showNewPassword, setShowNewPassword] = useState(false)
+  const [showRepPassword, setShowRepPassword] = useState(false)
+  const [showCurrPassword, setShowCurrPassword] = useState(false)
+  const [showDeletePassword, setShowDeletePassword] = useState(false)
+
+  const [newPasswType, setNewPasswType] = useState('password')
+  const [repPasswType, setRepPasswType] = useState('password')
+  const [currPasswType, setCurrPasswType] = useState('password')
+  const [deletePasswType, setDeletePasswType] = useState('password')
 
     return (
       <Modal
@@ -171,14 +190,30 @@ export default function PersonalDataModal(props) {
                             <img src= { blackEdit } style = { { color: 'black', marginRight: '0.8rem' } }/>
                             New Password
                         </Form.Label>
-                        <Form.Control style={{width: '90%', borderRadius: '1rem'}} type="password" placeholder= 'Enter new password' /> 
+                        <Form.Control style={{width: '90%', borderRadius: '1rem'}} type={ newPasswType } placeholder= 'Enter new password' />
+                        <span
+                            onClick={ () => { showNewPassword ? setShowNewPassword(false) : setShowNewPassword(true); showNewPassword ? setNewPasswType('password') : setNewPasswType('text') } }
+                        >
+                            <img
+                                style={ { position: 'absolute', left: '19rem', top: '6.6rem', cursor: 'pointer'} }
+                                src= { showNewPassword ? Eye : Eyeclose } alt="Eye Icon" />
+                        </span>
+
                     </Form.Group>
                     <Form.Group style={{width: '100%'}} className="mb-3" controlId="formBasicRepeatPassword">
                         <Form.Label style={{fontWeight: '500', paddingLeft: '5px'}}>
                             <img src= { blackEdit } style = { { color: 'black', marginRight: '0.8rem' } }/>
                             Repeat Password
                         </Form.Label>
-                        <Form.Control style={{paddingLeft:'20px', width: '90%', borderRadius: '1rem'}} type="password" placeholder="Repeat new password" />
+                        <Form.Control style={{paddingLeft:'20px', width: '90%', borderRadius: '1rem'}} type={ repPasswType } placeholder="Repeat new password" />
+                        <span
+                            onClick={ () => { showRepPassword ? setShowRepPassword(false) : setShowRepPassword(true); showRepPassword ? setRepPasswType('password') : setRepPasswType('text') } }
+                        >
+                            <img
+                                style={ { position: 'absolute', left: '43.5rem', top: '6.6rem', cursor: 'pointer'} }
+                                src={ showRepPassword ? Eye : Eyeclose } alt="Eye Icon" />
+                        </span>
+
                     </Form.Group>
                 </div>
                 <div className={`${styles.inputWork}`}>
@@ -187,7 +222,15 @@ export default function PersonalDataModal(props) {
                             <img src= { lock } style = { { color: 'black', marginRight: '0.8rem' } }/>
                             Current Password
                         </Form.Label>
-                        <Form.Control style={{width: '44%', borderRadius: '1rem'}} type="password" placeholder= 'Enter your password' /> 
+                        <Form.Control style={{width: '44%', borderRadius: '1rem'}} type={ currPasswType } placeholder= 'Enter your password' /> 
+                        <span
+                            onClick={ () => { showCurrPassword ? setShowCurrPassword(false) : setShowCurrPassword(true); showCurrPassword ? setCurrPasswType('password') : setCurrPasswType('text') } }
+                        >
+                            <img 
+                                style={ { position: 'absolute', left: '19rem', top: '12rem', cursor: 'pointer' } }
+                                src={ showCurrPassword ? Eye : Eyeclose } alt="Eye Icon" />
+                        </span>
+
                     </Form.Group>
                 </div>
                 
@@ -236,7 +279,15 @@ export default function PersonalDataModal(props) {
                             <img src= { lock } style = { { color: 'black', marginRight: '0.8rem', paddingBottom: '0.3rem'} } alt="" />
                             Your Password
                         </Form.Label>
-                        <Form.Control style={{width: '60%', borderRadius: '1rem', margin: '0 auto'}} type="password" placeholder="Enter your password" />
+                        <Form.Control style={{width: '60%', borderRadius: '1rem', margin: '0 auto'}} type={ deletePasswType } placeholder="Enter your password" />
+                        <span
+                            onClick={ () => { showDeletePassword ? setShowDeletePassword(false) : setShowDeletePassword(true); showDeletePassword ? setDeletePasswType('password') : setDeletePasswType('text') } }
+                        >
+                            <img 
+                                style={ { position: 'absolute', left: '36rem', top: '3.7rem', cursor: 'pointer' } }
+                                src={  showDeletePassword ? Eye : Eyeclose   } alt="Eye Icon" />
+                        </span>
+
                         <div className='text-center' style={ { paddingTop: '2rem', marginRight: '7rem' } }>
                             <input type='radio' className='text-center' />
                                 <span className='ms-3'>

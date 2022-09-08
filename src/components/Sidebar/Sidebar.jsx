@@ -1,13 +1,12 @@
 import React from 'react'
-import styles from '../Sidebar/Sidebar.module.css'
-import Settings from '../../assets/icons/Settings'
-import Advertisements from '../../assets/icons/Advertisements.jsx'
-import Profile from '../../assets/icons/Profile.jsx'
-import Logout from '../../assets/icons/Logout.jsx'
-import Inbox from '../../assets/icons/Inbox.jsx'
-import Notifications from '../../assets/icons/Notifications.jsx'
+import styles from './sidebar.module.css'
+import Settings from './icons/Settings'
+import Advertisements from './icons/Advertisements.jsx'
+import Profile from './icons/Profile.jsx'
+import Logout from './icons/Logout.jsx'
+import Inbox from './icons/Inbox.jsx'
+import Notifications from './icons/Notifications.jsx'
 import { NavLink, Outlet } from 'react-router-dom'
-import logo from '../../assets/Login/LogoBlue.svg'
 
 
 const Sidebar = () => {
@@ -15,7 +14,7 @@ const Sidebar = () => {
     const navLinkStyle = ({ isActive }) => {
         return {
             color: isActive ? 'white' : '#001A24',
-            backgroundColor: isActive ? '#142157' : 'white'
+            backgroundColor: isActive ? '#107ACC' : 'white'
         }
     } 
  
@@ -23,7 +22,8 @@ const Sidebar = () => {
     <div>
         <div className={`${styles.divContenedor}`}>  {/* className={`${styles.divFlex}`} */} 
             <div className={styles.logo}>
-                <img src={logo} alt="home icon" style={{marginLeft:'3rem', marginTop:'2rem', width:'75%'}}/>
+                {/* <img src={vector} alt="home icon" className={styles.iconLogo} />
+                <p>App Name</p> */}
             </div>
             <NavLink style={navLinkStyle} to='advertisements' className={styles.navLinkTop}>    
                 {({isActive}) => (
@@ -74,8 +74,13 @@ const Sidebar = () => {
                     <p style={{color: isActive ? 'white' : '#001A24' }}>Settings</p>
                 </div>
                 )}
+<<<<<<< HEAD
             </NavLink> */}
             <NavLink style={navLinkStyle} to='/' className={styles.navLinkBottom}> 
+=======
+            </NavLink>
+            <NavLink style={navLinkStyle} to='logout' className={styles.navLinkBottom}> 
+>>>>>>> refs/remotes/origin/main
                 {({isActive}) => (
                     <div className={styles.divFlex}>
                     <div className={styles.icons}>
@@ -86,7 +91,11 @@ const Sidebar = () => {
                 )}
             </NavLink>
         </div>
+<<<<<<< HEAD
         <div style={{width:'75%', marginLeft:'18rem'}}>
+=======
+        <div className={`${styles.outlet}`}>
+>>>>>>> refs/remotes/origin/main
             <Outlet />
         </div>
     </div>
