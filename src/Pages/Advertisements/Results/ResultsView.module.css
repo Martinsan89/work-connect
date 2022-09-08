@@ -4,10 +4,15 @@
     border-bottom: 1px solid #EAEBEE;
     padding: 1rem;
     margin-top: 1rem;
+    width: 70%;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
 }
 .educationTitle{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 9rem;
 }
 .tagTitle{
     font-family: Roboto;
@@ -32,12 +37,16 @@
     font-family: Roboto;
     font-weight: 300;
     font-size: 16px;
-    width: 70%;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: flex-start;
 }
 .buttonSet {
     position: fixed;
-    top: 85%;
-    right: 8%;
+    top: 45rem;
+    right: 6%;
 }
 .buttonModal{
     background-color: #ffff;
@@ -58,4 +67,18 @@ height: 80px;
     margin: 1rem 0;
     display: flex;
     align-items: baseline;
+}
+.eye{
+  width: 3rem;
+  height: 17px;
+  margin-bottom: 3px;
+}
+.eyeText{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: 'magenta';
+  padding-left: 10px;
 }

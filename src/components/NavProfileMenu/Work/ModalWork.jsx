@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from 'react'
-import {Button, Modal, Form} from 'react-bootstrap'
+import {Button, Modal, Form, CloseButton} from 'react-bootstrap'
 import styles from '../Work/Work.module.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { addWork} from '../../../features/WorkFeatures'
@@ -28,6 +28,7 @@ function ModalWork(props) {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
+        <CloseButton style={{position:'relative', top:'-3rem', left:'55rem'}} onClick={props.onHide} variant='white' />
         <Modal.Header style={{margin: 'auto', borderBottom:'none'}}>
           <Modal.Title style={{color: '#107ACC'}} id="contained-modal-title-vcenter">
             Add Work Experience

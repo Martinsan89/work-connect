@@ -22,7 +22,7 @@ const Profile = () => {
   const [state, dispatch] = useReducer(reducer, {showEditIcons: false, showEdit: true, showEditButtons: false })
 
   return (
-    <div style={{width:'75%', marginLeft:'18rem'}}>
+    <div style={{width:'100%'}}>
       <div className={ `${ styles.userCard }` } style={ { backgroundColor: '#FFFF' } } >
           <div className={ `text-start card-header ${ styles.userCardHeader_modifier }` }>
               <p className={`${ styles.userName }`}>

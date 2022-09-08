@@ -7,7 +7,7 @@ import Ellipse from '../../assets/Login/Ellipse.svg'
 import Vector from '../../assets/Login/Vector.svg'
 import Eye from '../../assets/Login/Eye.svg'
 import EyeClose from '../../assets/Login/EyeClose.svg'
-import {Button, Form} from 'react-bootstrap'
+import {Form} from 'react-bootstrap'
 import {Navigate} from 'react-router-dom'
 
 

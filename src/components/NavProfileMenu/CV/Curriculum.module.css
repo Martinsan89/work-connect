@@ -50,8 +50,8 @@
 
 .buttonSet {
     position: fixed;
-    top: 45rem;
-    right: 6%;
+    top: 75%;
+    right: 8%;
 }
 .buttonModal{
     background-color: #ffff;
@@ -73,3 +73,4 @@ height: 80px;
     display: flex;
     align-items: baseline;
 }
+

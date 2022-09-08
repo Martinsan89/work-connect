@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {Button, Modal} from 'react-bootstrap'
+import {Button, Modal, CloseButton} from 'react-bootstrap'
 import Vector from '../../../assets/Edit/Vector.svg'
 import {useDropzone} from 'react-dropzone'
 import { useSelector, useDispatch } from 'react-redux'
@@ -70,6 +70,7 @@ function ModalCurriculum(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
+        <CloseButton style={{position:'relative', top:'-3rem', left:'55rem'}} onClick={props.onHide} variant='white' />
       <Modal.Header style={{margin: 'auto', borderBottom:'none'}}>
         <Modal.Title style={{color: '#107ACC'}} id="contained-modal-title-vcenter">
           Add CV

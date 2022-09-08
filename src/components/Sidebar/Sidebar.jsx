@@ -65,7 +65,7 @@ const Sidebar = () => {
                 </div>
                 )}
             </NavLink>
-            <NavLink style={navLinkStyle} to='settings' className={styles.navLink}> 
+            {/* <NavLink style={navLinkStyle} to='settings' className={styles.navLink}> 
                 {({isActive}) => (
                     <div className={styles.divFlex}>
                     <div className={styles.icons}>
@@ -74,7 +74,7 @@ const Sidebar = () => {
                     <p style={{color: isActive ? 'white' : '#001A24' }}>Settings</p>
                 </div>
                 )}
-            </NavLink>
+            </NavLink> */}
             <NavLink style={navLinkStyle} to='/' className={styles.navLinkBottom}> 
                 {({isActive}) => (
                     <div className={styles.divFlex}>
@@ -86,7 +86,9 @@ const Sidebar = () => {
                 )}
             </NavLink>
         </div>
-      <Outlet />
+        <div style={{width:'75%', marginLeft:'18rem'}}>
+            <Outlet />
+        </div>
     </div>
   )
 }
