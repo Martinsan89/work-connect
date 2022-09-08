@@ -20,6 +20,7 @@ import CreatedSuccessfully from './Components/CreatedSuccessfully/CreatedSuccess
 import VerifyAccount from './Components/VerifyAccount/VerifyAccount'
 import AccountVerified from './Components/AccountVerified/AccountVerified'
 import RestorePassword from './Components/RestorePassword/RestorePassword'
+import RestoreSent from './Components/RestoreSent/RestoreSent'
 
 const App = () => {
     const [companyButton, setCompanyButton] = useState(true)
@@ -47,6 +48,7 @@ const App = () => {
       <Route path='verifyaccount' element={ <VerifyAccount />}/>
       <Route path='accountverified' element={ <AccountVerified />}/>
       <Route path='restorepassword' element={ <RestorePassword />}/>
+      <Route path='restoresent' element={ <RestoreSent />}/>
       <Route path='home' element={<Home />}>
         <Route path='advertisements' element={<Advertisements/>}/>
         <Route path='notifications' element={<Notifications />}/>

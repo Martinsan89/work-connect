@@ -1,12 +1,21 @@
 import React from 'react'
 import styles from './RestorePassword.module.css'
-import logo from '../../../assets/Register/LogoWorkConnect.svg'
-import Vector from '../../../assets/Register/Vector.svg'
-import Elipse from '../../../assets/Register/Elipse.svg'
-import Mail from '../../../assets/Register/Mail.svg'
+import logo from '../../assets/Register/LogoWorkConnect.svg'
+import Vector from '../../assets/Register/Vector.svg'
+import Elipse from '../../assets/Register/Elipse.svg'
+import Mail from '../../assets/Register/Mail.svg'
 import { Form, Button } from 'react-bootstrap'
+import { useState } from 'react'
+import { Navigate } from 'react-router-dom'
 
 const RestorePassword = () => {
+
+    const [goToRestoreSent, setGoToRestoreSent] = useState(false)
+
+    if(goToRestoreSent) {
+        return <Navigate to="/restoresent" />
+    }
+
   return (
     <>
         <div className= { styles.mainDiv }>
@@ -34,7 +43,7 @@ const RestorePassword = () => {
                             <Form.Control 
                                 style={{width: '70%', margin: '0 auto', paddingLeft: '1.6rem', borderRadius: '1rem', color: '#B3B1B4', fontWeight: '300'}}
                                 className= { styles.inputCodeForm } 
-                                type="text" 
+                                type="email" 
                                 placeholder= 'Your email here'
                             />
                         </Form.Group>
@@ -42,9 +51,11 @@ const RestorePassword = () => {
                 </Form>
 
                 <div className='mb-3' style={ { textAlign: 'center', marginTop: '2rem'} } >
-                    <Button 
+                    <Button
+                        onClick={ () => { setGoToRestoreSent(true) } }
                         style={{padding:'1rem', backgroundColor:'#F14281', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', border: 'none', borderRadius:'3rem', lineHeight:'20px' }} 
-                        type="submit">
+                        type="submit"
+                    >
                             SUBMIT
                     </Button>
                 </div>

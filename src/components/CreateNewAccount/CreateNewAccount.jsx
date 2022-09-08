@@ -11,7 +11,6 @@ import AboutYouPersonForm from './AboutYouPersonForm' // Private User
 import ProfileDataForm from './ProfileDataForm' // Company
 import ProfileDataFyPForm from './ProfileDataFyPForm' // Freelancer & Private User
 import { Navigate, useNavigate } from 'react-router-dom'
-import VerifyAccount from '../VerifyAccount/VerifyAccount'
 
 
 const CreateNewAccount = ({ companyButton, freelaButton, personButon }) => {
