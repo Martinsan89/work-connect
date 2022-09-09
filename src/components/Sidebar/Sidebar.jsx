@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from './sidebar.module.css'
-import Settings from './icons/Settings'
+import styles from './Sidebar.module.css'
+import Logo from '../../assets/Sidebar/Logo.svg'
 import Advertisements from './icons/Advertisements.jsx'
 import Profile from './icons/Profile.jsx'
 import Logout from './icons/Logout.jsx'
@@ -22,8 +22,7 @@ const Sidebar = () => {
     <div>
         <div className={`${styles.divContenedor}`}>  {/* className={`${styles.divFlex}`} */} 
             <div className={styles.logo}>
-                {/* <img src={vector} alt="home icon" className={styles.iconLogo} />
-                <p>App Name</p> */}
+                <img src={Logo} alt="home icon" className={styles.iconLogo} />
             </div>
             <NavLink style={navLinkStyle} to='advertisements' className={styles.navLinkTop}>    
                 {({isActive}) => (
@@ -74,13 +73,10 @@ const Sidebar = () => {
                     <p style={{color: isActive ? 'white' : '#001A24' }}>Settings</p>
                 </div>
                 )}
-<<<<<<< HEAD
+            </NavLink> */}
+            {/* <NavLink style={navLinkStyle} to='/' className={styles.navLinkBottom}> 
             </NavLink> */}
             <NavLink style={navLinkStyle} to='/' className={styles.navLinkBottom}> 
-=======
-            </NavLink>
-            <NavLink style={navLinkStyle} to='logout' className={styles.navLinkBottom}> 
->>>>>>> refs/remotes/origin/main
                 {({isActive}) => (
                     <div className={styles.divFlex}>
                     <div className={styles.icons}>
@@ -91,11 +87,11 @@ const Sidebar = () => {
                 )}
             </NavLink>
         </div>
-<<<<<<< HEAD
-        <div style={{width:'75%', marginLeft:'18rem'}}>
-=======
-        <div className={`${styles.outlet}`}>
->>>>>>> refs/remotes/origin/main
+
+        {/* <div style={{width:'75%', marginLeft:'18rem'}}> */}
+
+        <div className={`${styles.outletSidebar}`}>
+
             <Outlet />
         </div>
     </div>

@@ -71,7 +71,7 @@ export default function NavSideBar() {
                     )}
                 </NavLink>
             </div>
-            <div className={`${styles.outlet}`}>
+            <div className={`${styles.outletNavSideBar}`}>
                 <Outlet />
             </div>
             {/* <Routes>

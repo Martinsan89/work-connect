@@ -7,7 +7,7 @@ import styles from './notifications.module.css'
 
 const Notifications = () => {
   return (
-    <div>
+    <div style={{width:'94%'}}>
         <div className={styles.flexTitle}>
             <Inbox fill='white' />
             <h5>Notifications</h5>

@@ -21,7 +21,7 @@ const ResultsView = () => {
             </Form.Group>
       </Form>
       {/* Accordion */}
-      <Accordion defaultActiveKey={['0']} alwaysOpen style={{width:'20%', position:'absolute', right:'20px', top:'2rem'}}>
+      <Accordion defaultActiveKey={['0']} alwaysOpen style={{width:'24%', position:'absolute', right:'47px', top:'2rem'}}>
       <div style={{backgroundColor:'#107ACC', borderRadius:'1rem 1rem 0 0', height:'15%'}}>
         <div style={{color:'white', textAlign:'center', padding:'1px', fontSize:'24px', fontWeight:'600'}}>
           <p style={{marginTop:'1rem'}}>Filter</p>

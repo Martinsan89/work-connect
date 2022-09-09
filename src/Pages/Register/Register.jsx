@@ -1,24 +1,22 @@
 import React, { useState } from 'react'
 import styles from './Register.module.css'
-<<<<<<< HEAD:src/Components/NavSideBar/Register/Register.jsx
-import logo from '../../../assets/Register/LogoWorkConnect.svg'
-import Vector from '../../../assets/Register/Vector.svg'
-import Elipse from '../../../assets/Register/Elipse.svg'
-import Company from '../../../assets/Register/CompanyIcon.svg'
-import CompanyGray from '../../../assets/Register/CompanyGrayIcon.svg'
-import Freelancer from '../../../assets/Register/FreelancerIcon.svg'
-import FreelancerWhite from '../../../assets/Register/FreelancerWhite.svg'
-import Person from '../../../assets/Register/PersonIcon.svg'
-import PersonWhite from '../../../assets/Register/PersonWhite.svg'
-import { Form } from 'react-bootstrap'
-import { Navigate } from 'react-router-dom'
-=======
 import logo from '../../assets/Register/LogoWorkConnect.svg'
+import Vector from '../../assets/Register/Vector.svg'
+import Elipse from '../../assets/Register/Elipse.svg'
 import Company from '../../assets/Register/CompanyIcon.svg'
+import CompanyGray from '../../assets/Register/CompanyGrayIcon.svg'
 import Freelancer from '../../assets/Register/FreelancerIcon.svg'
+import FreelancerWhite from '../../assets/Register/FreelancerWhite.svg'
 import Person from '../../assets/Register/PersonIcon.svg'
-import {Button, Modal, Form} from 'react-bootstrap'
->>>>>>> 9da6dc84b9e31b7a6c064d2ee33c57f599bd9bac:src/Pages/Register/Register.jsx
+import PersonWhite from '../../assets/Register/PersonWhite.svg'
+import { Form } from 'react-bootstrap'
+// import { Navigate } from 'react-router-dom'
+// import logo from '../../assets/Register/LogoWorkConnect.svg'
+// import Company from '../../assets/Register/CompanyIcon.svg'
+// import Freelancer from '../../assets/Register/FreelancerIcon.svg'
+// import Person from '../../assets/Register/PersonIcon.svg'
+// import {Button, Modal, Form} from 'react-bootstrap'
+
 
 
 const Register = () => {
@@ -50,7 +48,7 @@ const Register = () => {
                 <div className={ styles.cardButtonsDiv }>
                     <div>
                         <button 
-                            onClick={ () => { setCompanyButton(true); setFreelaButton(false); setPersonButton(false) } }
+                            onClick={ () => {setCompanyButton(true); setFreelaButton(false); setPersonButton(false) } }
                             style={ companyButton ? { backgroundColor: '#2898EE' } : { backgroundColor: '#EAEBEE' } }
                             className={ styles.companyButton } >
                             <img 
@@ -100,17 +98,14 @@ const Register = () => {
                     <Form.Select 
                         className={ styles.formSelectCard }
                         // ⬇️ colocar todo este style en el archivo css de arriba ⬇️ 
-<<<<<<< HEAD:src/Components/NavSideBar/Register/Register.jsx
                         style={{width: '192px', height: '38px', padding:'6px 1rem', borderRadius:'1rem', marginLeft:'10px', color: '#B3B1B4', fontWeight: '300'}} aria-label="Default select example">
                         <option className={ styles.spanSelect }>
                             Select
                         </option>  
-=======
-                        style={{width: '192px', height: '38px', padding:'6px 1rem', borderRadius:'1rem', marginLeft:'10px', color: '#B3B1B4', fontWeight: '300'}} aria-label="Default select example"> Select
+                        {/* style={{width: '192px', height: '38px', padding:'6px 1rem', borderRadius:'1rem', marginLeft:'10px', color: '#B3B1B4', fontWeight: '300'}} aria-label="Default select example"> Select */}
                         {/* <option> */}
                             {/* <h6 className={ styles.spanSelect }>Select</h6> */}
                         {/* </option>   */}
->>>>>>> 9da6dc84b9e31b7a6c064d2ee33c57f599bd9bac:src/Pages/Register/Register.jsx
                     </Form.Select>
                     <button 
                         onClick={ companyButton ? () => { setBusiness(true) } : '' }

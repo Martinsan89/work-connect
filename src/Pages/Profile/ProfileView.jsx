@@ -5,7 +5,7 @@ import NavSideBar from "../../components/NavProfileMenu/NavSideBar"
 
 const ProfileView = () => {
   return (
-    <div style={{paddingTop:'1rem'}}>
+    <div>
       <Profile/>
       <div style={{paddingTop:'1rem'}}>
         <NavSideBar/>

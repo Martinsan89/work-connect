@@ -51,19 +51,16 @@
   width: 8rem;
 }
 
-.outlet {
-  padding: 1rem;
-  width: 70%;
-  height: 400px;
+.outletNavSideBar {
+  /* padding: 1rem; */
+  width: 65%;
+  height: 45vh;
+  margin-top: 1rem;
   border-radius: 16px;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
-  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
-  overflow-y: scroll;
   background-color: #ffff;
   position: relative; 
   left: 1rem;
-  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
-  mask-image: linear-gradient(to bottom, black 70%, transparent);
 }
 
 

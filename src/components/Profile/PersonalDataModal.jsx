@@ -1,19 +1,18 @@
 import { Modal, Button, Form } from 'react-bootstrap'
 import styles from './Profile.module.css'
 import { useState } from 'react';
-<<<<<<< HEAD:src/Components/NavSideBar/Profile/PersonalDataModal.jsx
-import blackEdit from '../../../assets/Buttons/blackEditButton.svg'
-import lock from '../../../assets/Buttons/LockIcon.svg'
-import info from '../../../assets/Buttons/info.svg'
-import trash from '../../../assets/Buttons/trash.svg'
-import Eye from '../../../assets/Profile/Eye.svg'
-import Eyeclose from '../../../assets/Profile/EyeClose.svg'
-=======
 import blackEdit from '../../assets/Buttons/blackEditButton.svg'
 import lock from '../../assets/Buttons/LockIcon.svg'
 import info from '../../assets/Buttons/info.svg'
 import trash from '../../assets/Buttons/trash.svg'
->>>>>>> 9da6dc84b9e31b7a6c064d2ee33c57f599bd9bac:src/components/Profile/PersonalDataModal.jsx
+import Eye from '../../assets/Profile/Eye.svg'
+import Eyeclose from '../../assets/Profile/EyeClose.svg'
+
+// import blackEdit from '../../assets/Buttons/blackEditButton.svg'
+// import lock from '../../assets/Buttons/LockIcon.svg'
+// import info from '../../assets/Buttons/info.svg'
+// import trash from '../../assets/Buttons/trash.svg'
+
 
 export default function PersonalDataModal(props) {
   const [personalData, setPersonalData] = useState(true);

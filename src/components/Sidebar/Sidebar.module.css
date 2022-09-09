@@ -63,10 +63,10 @@
 }
 
 .iconLogo {
-    width: 40px;
+    width: 80%;
     height: 35px;
-    margin-top: 25px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 1rem;
 }
 
 .icons {
@@ -114,15 +114,14 @@
         border-radius: 0px 0px 15px 15px;
 }
 
-.outlet {
-    margin-left: 18rem;
-    padding: 1rem;
-    /* margin-top: 1rem; */
-    width: 1050px;
-    height: 570px;
+.outletSidebar {
+    /* padding: 1rem; */
+    width: 80%;
+    margin-top: 2rem;
+    /* height: 4vh;
     border-radius: 16px;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
-    overflow-y: scroll;
-    background-color: #ffff;
-    position: relative;
+    background-color: #ffff; */
+    position: relative; 
+    left: 18rem;
 }
