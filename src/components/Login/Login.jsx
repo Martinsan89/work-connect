@@ -15,14 +15,19 @@ function Login() {
 	const [passwordType, setPasswordType] = useState("password");
 	const [passwordInput, setPasswordInput] = useState("");
 	const [goToHome, setGoToHome] = useState(false);
-  const [goToRegister, setGoToRegister] = useState(false);
+	const [goToRegister, setGoToRegister] = useState(false);
+
+	const [goToRestorePassw, setGoToRestorePassw] = useState(false);
 
 	if(goToHome){
     return <Navigate to='/home'/>
-  }
-  if(goToRegister){
-    return <Navigate to='/register'/>
-  }
+	}
+	if(goToRegister){
+		return <Navigate to='/register'/>
+	}
+	if(goToRestorePassw){
+		return <Navigate to='/restorepassword'/>
+	}
 
 	const handlePasswordChange =(evnt)=>{
 			setPasswordInput(evnt.target.value);
@@ -80,7 +85,14 @@ function Login() {
 												</Form.Group>
 												<div className="pt-1 mb-4 d-flex align-items-baseline" style={{gap:'1rem'}}>
 												<button type='button' style={{padding:'1rem', backgroundColor:'#F14281', width:'140px', height:'52px', fontSize:'14px', fontWeight:'400', borderRadius:'3rem', lineHeight:'20px', color:'white', marginTop:'4rem', border:'none', justifyContent:'none', gap:'1rem'}} onClick={() => setGoToHome(true)} >LOGIN</button>
-													<p>Forgot your password?  <a style={{fontWeight:'500', cursor:'pointer'}} className="text-decoration-none">Click here</a></p>
+													<p>Forgot your password? 
+														<a
+															onClick={ () => { setGoToRestorePassw(true) } }
+															style={{fontWeight:'500', cursor:'pointer'}} className="text-decoration-none ms-1"
+															>
+																Click here
+														</a>
+													</p>
 												</div>
 											</Form>
 										</div>

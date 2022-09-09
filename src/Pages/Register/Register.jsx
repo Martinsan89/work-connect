@@ -18,16 +18,19 @@ import { Form } from 'react-bootstrap'
 // import {Button, Modal, Form} from 'react-bootstrap'
 
 
+import { Navigate } from 'react-router-dom'
 
-const Register = () => {
 
-    const [business, setBusiness] = useState(false)
-    const [freelancer, setFreelancer] = useState(false)
-    const [privateUser, setPrivateUser] = useState(false)
+
+const Register = ({ companyButton, setCompanyButton, freelaButton, setFreelaButton, personButon, setPersonButton }) => {
     
-    const [companyButton, setCompanyButton] = useState(true)
-    const [freelaButton, setFreelaButton] =useState(false)
-    const [personButon, setPersonButton] = useState(false)
+    
+
+    const [nextPage, setNextPage] = useState(false);
+
+    if(nextPage) {
+        return <Navigate to='/createnewaccount'/>
+    }
 
   return (
     <div>
@@ -106,9 +109,10 @@ const Register = () => {
                         {/* <option> */}
                             {/* <h6 className={ styles.spanSelect }>Select</h6> */}
                         {/* </option>   */}
+
                     </Form.Select>
                     <button 
-                        onClick={ companyButton ? () => { setBusiness(true) } : '' }
+                        onClick={ () => { setNextPage(true) } }
                         className={styles.continueCardButton}>
                         continue
                     </button>

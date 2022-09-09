@@ -12,6 +12,14 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import { configureStore} from '@reduxjs/toolkit'
 import { Provider} from 'react-redux'
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { configureStore} from '@reduxjs/toolkit'
+import { Provider} from 'react-redux'
+
+
 import worksReducer from './features/WorkFeatures'
 import educationsReducer from './features/EducationFeature'
 import languagesReducer from './features/LanguageFeature'

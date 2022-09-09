@@ -1,18 +1,30 @@
 import { Modal, Button, Form } from 'react-bootstrap'
 import styles from './Profile.module.css'
 import { useState } from 'react';
+<<<<<<< HEAD
+=======
+// <<<<<<< HEAD:src/Components/NavSideBar/Profile/PersonalDataModal.jsx
+>>>>>>> refs/remotes/origin/main
 import blackEdit from '../../assets/Buttons/blackEditButton.svg'
 import lock from '../../assets/Buttons/LockIcon.svg'
 import info from '../../assets/Buttons/info.svg'
 import trash from '../../assets/Buttons/trash.svg'
 import Eye from '../../assets/Profile/Eye.svg'
 import Eyeclose from '../../assets/Profile/EyeClose.svg'
+<<<<<<< HEAD
 
+=======
+// =======
+>>>>>>> refs/remotes/origin/main
 // import blackEdit from '../../assets/Buttons/blackEditButton.svg'
 // import lock from '../../assets/Buttons/LockIcon.svg'
 // import info from '../../assets/Buttons/info.svg'
 // import trash from '../../assets/Buttons/trash.svg'
+<<<<<<< HEAD
 
+=======
+// >>>>>>> 9da6dc84b9e31b7a6c064d2ee33c57f599bd9bac:src/components/Profile/PersonalDataModal.jsx
+>>>>>>> refs/remotes/origin/main
 
 export default function PersonalDataModal(props) {
   const [personalData, setPersonalData] = useState(true);
