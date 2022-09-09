@@ -7,7 +7,7 @@
   /* width: 280px;
   height: 548px; */
   width: 280px;
-  height: 400px;
+  height: 49.5vh;
   list-style: none;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 16px;
@@ -53,14 +53,14 @@
 
 .outletNavSideBar {
   /* padding: 1rem; */
-  width: 65%;
-  height: 45vh;
-  margin-top: 1rem;
+  width: 69.5%;
+  height: 49.5vh;
   border-radius: 16px;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
   background-color: #ffff;
   position: relative; 
   left: 1rem;
+  overflow-y: scroll;
 }
 
 

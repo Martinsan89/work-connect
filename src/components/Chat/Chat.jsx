@@ -18,47 +18,50 @@ const Chat = () => {
                 <input className={styles.inputMessage} type="text" placeholder='Search in messages' />
                 <img src={lupa} alt="" className={styles.buscar} />
             </div>
-            <div className={styles.flexMessages}> 
-                <div>
-                    <img src={man} alt="" className={styles.image} />
-                </div>
-                <div>
-                    <div className={styles.flexName}>
-                        <p className={styles.name}>Camila Pagie</p>
-                        <p className={styles.date}>22/07/1995</p>
+            <div style={{backgroundColor:'white', boxShadow: '4px 4px 16px rgba(0, 0, 0, 0.06)', height:'77.5vh'}}>
+                <div className={styles.flexMessages}> 
+                    <div>
+                        <img src={man} alt="" className={styles.image} />
                     </div>
                     <div>
-                        <p className={styles.message}>Lorem ipsum, dolor sit amet consectetur adipisicing elit </p>
+                        <div className={styles.flexName}>
+                            <p className={styles.name}>Camila Pagie</p>
+                            <p className={styles.date}>22/07/1995</p>
+                        </div>
+                        <div>
+                            <p className={styles.message}>Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className={styles.flexMessages}> 
-                <div>
-                    <img src={woman} alt="" className={styles.image} />
-                </div>
-                <div>
-                    <div className={styles.flexName}>
-                        <p className={styles.name}>Nico Pagie</p>
-                        <p className={styles.date}>22/07/1995</p>
+                <div className={styles.flexMessages}> 
+                    <div>
+                        <img src={woman} alt="" className={styles.image} />
                     </div>
                     <div>
-                        <p className={styles.message}>Lorem ipsum, dolor sit amet consectetur adipisicing elit </p>
+                        <div className={styles.flexName}>
+                            <p className={styles.name}>Nico Pagie</p>
+                            <p className={styles.date}>22/07/1995</p>
+                        </div>
+                        <div>
+                            <p className={styles.message}>Lorem ipsum, dolor sit amet consectetur</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className={styles.flexMessages}> 
-                <div>
-                    <img src={woman} alt="" className={styles.image} />
-                </div>
-                <div>
-                    <div className={styles.flexName}>
-                        <p className={styles.name}>Martín Pagie</p>
-                        <p className={styles.date}>22/07/1995</p>
+                <div className={styles.flexMessages}> 
+                    <div>
+                        <img src={woman} alt="" className={styles.image} />
                     </div>
                     <div>
-                        <p className={styles.message}>Lorem ipsum, dolor sit amet consectetur adipisicing elit </p>
+                        <div className={styles.flexName}>
+                            <p className={styles.name}>Martín Pagie</p>
+                            <p className={styles.date}>22/07/1995</p>
+                        </div>
+                        <div>
+                            <p className={styles.message}>Lorem ipsum, dolor sit amet consectetur </p>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
 

@@ -7,9 +7,10 @@
 
     position: absolute;
     width: 270px;
-    /* height: 1086px; */
+    height: 96.5vh;
     left: 0px;
     top: 0px;
+    padding-top: 1.5rem;
 
     background: #FFFFFF;
     /* Values/Light */
@@ -30,6 +31,9 @@
 .divFlex {
     display: flex;
     cursor: pointer;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 1rem;
 }
 
 .divFlex p{
@@ -69,9 +73,9 @@
     margin-top: 1rem;
 }
 
-.icons {
+/* .icons {
     margin: 15px 50px 0px 40px !important;
-}
+} */
 
 .hr {
     height: 3px;
@@ -116,7 +120,7 @@
 
 .outletSidebar {
     /* padding: 1rem; */
-    width: 80%;
+    width: 75%;
     margin-top: 2rem;
     /* height: 4vh;
     border-radius: 16px;

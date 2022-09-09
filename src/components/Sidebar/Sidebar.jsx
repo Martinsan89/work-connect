@@ -54,7 +54,7 @@ const Sidebar = () => {
                 </div>
                 )}
             </NavLink>
-            <NavLink style={navLinkStyle} to='profile' className={styles.navLink}> 
+            <NavLink style={navLinkStyle} to='profile/work' className={styles.navLink}> 
                 {({isActive}) => (
                     <div className={styles.divFlex}>
                     <div className={styles.icons}>
@@ -76,9 +76,9 @@ const Sidebar = () => {
             </NavLink> */}
             {/* <NavLink style={navLinkStyle} to='/' className={styles.navLinkBottom}> 
             </NavLink> */}
-            <NavLink style={navLinkStyle} to='/' className={styles.navLinkBottom}> 
+            <NavLink  style={navLinkStyle} to='/' className={styles.navLinkBottom}> 
                 {({isActive}) => (
-                    <div className={styles.divFlex}>
+                    <div style={{marginTop:'3rem', borderTop:'1px solid'}} className={styles.divFlex}>
                     <div className={styles.icons}>
                         <Logout fill={isActive ? 'white' : 'black'} />
                     </div>

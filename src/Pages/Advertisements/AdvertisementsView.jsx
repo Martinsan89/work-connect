@@ -19,7 +19,7 @@ const Advertisements = () => {
       {results ? 
       <Outlet/> :
       <div>
-        <div style={{backgroundColor:'white', margin:'auto', marginBottom:'2rem', boxShadow: '4px 4px 16px rgba(0.06, 0.06, 0.06, 0.06)', borderRadius: '0px 0px 16px 16px', padding:'2rem'}}>
+        <div style={{backgroundColor:'white', margin:'auto', marginBottom:'2rem', boxShadow: '4px 4px 16px rgba(0.06, 0.06, 0.06, 0.06)', borderRadius: '0px 0px 16px 16px', paddingBottom:'2rem'}}>
           <div style={{margin:'auto'}}>
             <p style={{color:'#107ACC', fontWeight:'800', fontSize:'42px', textAlign:'center'}}>Find job offers near you!</p>
           </div>
@@ -39,7 +39,7 @@ const Advertisements = () => {
                 <p style={{fontSize:'22px', marginTop:'1rem'}}>Popular categories</p>
               </div>
             </div>
-            <div style={{height:'44vh', backgroundColor:'white', borderRadius:'1rem', WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent)', overflowY:'scroll'}}>
+            <div style={{height:'44vh', backgroundColor:'white', borderRadius:'1rem', WebkitMaskImage: 'linear-gradient(to bottom, black 90%, transparent)', overflowY:'scroll'}}>
                 <div style={{display:'flex', flexWrap:'wrap', justifyContent:'center', paddingTop:'1rem'}}>
                   {PopularData.map((i) => (
                       <div style={{padding:'10px 4px'}} key={i.id}>
@@ -57,7 +57,7 @@ const Advertisements = () => {
                 <p style={{fontSize:'22px', marginTop:'1rem'}}>Search by Location</p>
               </div>
             </div>
-            <div style={{height:'46vh', backgroundColor:'white', borderRadius:'1rem', display:'flex', WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent)', overflowY:'scroll'}}>
+            <div style={{height:'46vh', backgroundColor:'white', borderRadius:'1rem', display:'flex', WebkitMaskImage: 'linear-gradient(to bottom, black 90%, transparent)', overflowY:'scroll'}}>
               {/* 1st column */}
               <div style={{display:'flex', paddingTop:'1rem', flexDirection:'column', width:'50%', borderRight:'1px solid black', margin:'12px 0', height:'fit-content'}}>
                 {SearchData.map((i) => (

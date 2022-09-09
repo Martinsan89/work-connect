@@ -97,7 +97,7 @@ const ModalAdvertisement = (props) => {
               <Form.Control style={{width: '96%', borderRadius: '1rem'}} type="text" placeholder="Sample Tech, Inc." onChange={(e) => {setTitle(e.target.value)}}/>
           </Form.Group>
           {/* Dropwdowns */}
-          <Form.Group style={{width: '100%', display:'flex', justifyContent:'space-evenly', gap:'20px', alignItems:'center'}} className="mb-3" controlId="select">
+          <Form.Group style={{width: '97%', display:'flex', justifyContent:'space-evenly', gap:'20px', alignItems:'center'}} className="mb-3" controlId="select">
             <Dropdown style={{width:'22%'}}>
               <Dropdown.Toggle  as={LocationToggle} id="dropdown-basic">
                 Location
