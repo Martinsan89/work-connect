@@ -4,11 +4,8 @@ import CVSVG from './NavSideBarSvg/CvSvg'
 import WorkSVG from './NavSideBarSvg/WorkSvg'
 import EducationSVG from './NavSideBarSvg/EducationSvg'
 import LanguageSVG from './NavSideBarSvg/LanguageSvg'
-import {NavLink, Outlet, Routes, Route} from 'react-router-dom'
-// import Work from '../../components/NavProfileMenu/Work/Work'
-// import Education from '../../components/NavProfileMenu/Education/Education'
-// import Curriculum from '../../components/NavProfileMenu/CV/Curriculum'
-// import Language from '../../components/NavProfileMenu/Language/Languages'
+import {NavLink, Outlet} from 'react-router-dom'
+
 
 
 
@@ -74,7 +71,7 @@ export default function NavSideBar() {
                     )}
                 </NavLink>
             </div>
-            <div className={`${styles.outlet}`}>
+            <div className={`${styles.outletNavSideBar}`}>
                 <Outlet />
             </div>
             {/* <Routes>

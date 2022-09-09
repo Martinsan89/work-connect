@@ -7,64 +7,67 @@ import styles from './notifications.module.css'
 
 const Notifications = () => {
   return (
-    <div>
+    <div style={{width:'100%'}}>
         <div className={styles.flexTitle}>
             <Inbox fill='white' />
             <h5>Notifications</h5>
         </div>
-        <div className={styles.flexItems}>
-            <div className={styles.flex}>
-                <Work w={'40px'} h={'40px'} className={styles.icon} />
-                <div className={styles.description}>
-                    <p className={styles.pOne}>The advertisments has been updated</p>
-                    <p className={styles.pTwo}>Project Manager for Development Team</p>
-                </div>
-            </div>
-            <div className={styles.flexItems2}>
+        <div style={{backgroundColor:'white', boxShadow: '4px 4px 16px rgba(0, 0, 0, 0.06)', height:'85.5vh'}}>
+            <div className={styles.flexItems}>
                 <div className={styles.flex}>
-                    <img src={eye} className={styles.eye} />
-                    <p>VIEW</p>
+                    <Work w={'40px'} h={'40px'} className={styles.icon} />
+                    <div className={styles.description}>
+                        <p className={styles.pOne}>The advertisments has been updated</p>
+                        <p className={styles.pTwo}>Project Manager for Development Team</p>
+                    </div>
                 </div>
-                <div>
-                    <p>08/20/22</p>
+                <div className={styles.flexItems2}>
+                    <div className={styles.flex}>
+                        <img src={eye} className={styles.eye} />
+                        <p>VIEW</p>
+                    </div>
+                    <div>
+                        <p>08/20/22</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className={styles.flexItems}>
-            <div className={styles.flex}>
-                <Work w={'40px'} h={'40px'} className={styles.icon} />
-                <div className={styles.description}>
-                    <p className={styles.pOne}>The advertisments has been updated</p>
-                    <p className={styles.pTwo}>Project Manager for Development Team</p>
-                </div>
-            </div>
-            <div className={styles.flexItems2}>
+            <div className={styles.flexItems}>
                 <div className={styles.flex}>
-                    <img src={eye} className={styles.eye} />
-                    <p>VIEW</p>
+                    <Work w={'40px'} h={'40px'} className={styles.icon} />
+                    <div className={styles.description}>
+                        <p className={styles.pOne}>The advertisments has been updated</p>
+                        <p className={styles.pTwo}>Project Manager for Development Team</p>
+                    </div>
                 </div>
-                <div>
-                    <p>08/20/22</p>
+                <div className={styles.flexItems2}>
+                    <div className={styles.flex}>
+                        <img src={eye} className={styles.eye} />
+                        <p>VIEW</p>
+                    </div>
+                    <div>
+                        <p>08/20/22</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className={styles.flexItems}>
-            <div className={styles.flex}>
-                <Work w={'40px'} h={'40px'} className={styles.icon} />
-                <div className={styles.description}>
-                    <p className={styles.pOne}>The advertisments has been updated</p>
-                    <p className={styles.pTwo}>Project Manager for Development Team</p>
-                </div>
-            </div>
-            <div className={styles.flexItems2}>
+            <div className={styles.flexItems}>
                 <div className={styles.flex}>
-                    <img src={eye} className={styles.eye} />
-                    <p>VIEW</p>
+                    <Work w={'40px'} h={'40px'} className={styles.icon} />
+                    <div className={styles.description}>
+                        <p className={styles.pOne}>The advertisments has been updated</p>
+                        <p className={styles.pTwo}>Project Manager for Development Team</p>
+                    </div>
                 </div>
-                <div>
-                    <p>08/20/22</p>
+                <div className={styles.flexItems2}>
+                    <div className={styles.flex}>
+                        <img src={eye} className={styles.eye} />
+                        <p>VIEW</p>
+                    </div>
+                    <div>
+                        <p>08/20/22</p>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
   )

@@ -34,7 +34,7 @@ export default function Curriculum() {
       {cvList.map((cv)=>{
         return (
         <div className={`${styles.tagCV}`} key={cv.id}>
-        <div style={{width:'34%', display:'flex', gap:'1rem'}}>
+        <div style={{width:'34%', display:'flex', gap:'1rem', marginTop:'1rem'}}>
           <img src={PDF} alt="cv" className={`${styles.cv}`} />
         <div className={`${styles.textCV}`}>
           <div>

@@ -51,7 +51,7 @@ export default function Languages() {
       {languageList.map((language) => {
         return (
           <div className={`${styles.tagLanguage}`} key={language.id}>
-            <div style={{width:'34%', display:'flex'}}>
+            <div style={{width:'34%', display:'flex', marginTop:'1rem'}}>
             {language.language === 'Belgian' && <img src={Belgian} alt="flag" className={`${styles.flag}`} />}
             {language.language === 'Chinese' && <img src={Chinese} alt="flag" className={`${styles.flag}`} />}
             {language.language === 'Danish' && <img src={Danish} alt="flag" className={`${styles.flag}`} />}

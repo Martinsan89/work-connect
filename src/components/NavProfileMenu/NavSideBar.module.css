@@ -7,13 +7,12 @@
   /* width: 280px;
   height: 548px; */
   width: 280px;
-  height: 400px;
+  height: 49.5vh;
   list-style: none;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 16px;
   background-color: #ffff;
   position: relative;
-  left: 18rem;
 }
 .tagNav {
   display: flex;
@@ -52,16 +51,16 @@
   width: 8rem;
 }
 
-.outlet {
-  padding: 1rem;
-  width: 51%;
-  height: 400px;
+.outletNavSideBar {
+  /* padding: 1rem; */
+  width: 69.5%;
+  height: 49.5vh;
   border-radius: 16px;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
-  overflow-y: scroll;
   background-color: #ffff;
   position: relative; 
-  left: 19rem;
+  left: 1rem;
+  overflow-y: scroll;
 }
 
 

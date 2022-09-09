@@ -1,0 +1,83 @@
+*:root {
+    --main-blue: #107ACC;
+    --light-blue: #2898EE;
+    --dark-blue: #142157;
+    --light-gray: #EAEBEE;
+    --dark-gray: #B3B1B4;
+    --magenta: #F14281;
+}
+
+.mainDiv {
+    background-image: url(../../assets/Register/BG-Photo.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.registerCard {
+    position: relative;
+    top: 15rem;
+    background-color: #FFFFFF;
+    width: 700px;
+    height: 265px;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.registerTitle {
+    text-align: center;
+    padding-top: 5rem;
+    color: var(--main-blue);
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.registerSubTitle {
+    width: 23rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #001A24;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.cardButtonsDiv {
+    
+}
+
+.footer {
+    background-color: var(--main-blue);
+    height: 12rem;
+    margin-top: -3rem;
+}
+
+.footerLogo {
+    margin-top: 3rem;
+}
+
+.footerText {
+    margin-top: 2rem;
+}
+
+.footerLink {
+    color: #FFFF;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footerLink:hover {
+    color: #FFFF;
+}
+
+.copyrightDiv {
+    background-color: var(--dark-blue);
+    height: 3rem;
+}
+
+.copyrightText {
+    color: #FFFF;
+    text-align: center;
+    padding-top: 0.8rem;
+    font-weight: 400;
+    font-size: 14px;
+}

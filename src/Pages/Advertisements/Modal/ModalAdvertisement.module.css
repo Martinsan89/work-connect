@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.educationTag {
+    border-bottom: 1px solid #EAEBEE;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.educationTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.tagTitle{
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 300;
+    color: #107ACC;
+}
+.tagDate {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    color: #001A24;
+    display: flex;
+    gap: 10px;
+}
+.subtitle{
+    font-family: Roboto;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+.text {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 1rem 0;
+}
+.buttonSet {
+    position: fixed;
+    top: 75%;
+    right: 8%;
+}
+.buttonModal{
+    background-color: #ffff;
+    border: none;
+}
+
+.imgButton {
+width: 80px;
+height: 80px;
+}
+
+.inputWork{
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.inputJobs{
+    margin: 1rem 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.imgBgMarket {
+    color: #107ACC;
+    background-image: url('../../../assets/Results/Modal/Marker.svg');
+    background-repeat: no-repeat;
+}

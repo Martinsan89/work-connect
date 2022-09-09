@@ -8,6 +8,8 @@
 .educationTitle{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
 }
 .tagTitle{
     font-family: Roboto;
@@ -36,8 +38,8 @@
 }
 .buttonSet {
     position: fixed;
-    top: 45rem;
-    right: 6%;
+    top: 85%;
+    right: 8%;
 }
 .buttonModal{
     background-color: #ffff;

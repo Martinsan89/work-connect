@@ -1,4 +1,4 @@
-import { Modal, Button, Form } from 'react-bootstrap'
+import { Modal, Button, Form, CloseButton } from 'react-bootstrap'
 import styles from './Profile.module.css'
 import { useState } from 'react';
 import blackEdit from '../../assets/Buttons/blackEditButton.svg'
@@ -7,7 +7,6 @@ import info from '../../assets/Buttons/info.svg'
 import trash from '../../assets/Buttons/trash.svg'
 import Eye from '../../assets/Profile/Eye.svg'
 import Eyeclose from '../../assets/Profile/EyeClose.svg'
-
 
 export default function PersonalDataModal(props) {
   const [personalData, setPersonalData] = useState(true);
@@ -32,6 +31,7 @@ export default function PersonalDataModal(props) {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
+        <CloseButton style={{position:'relative', top:'-3rem', left:'55rem'}} onClick={props.onHide} variant='white' />
         <Modal.Header style={{margin: 'auto', textDecoration: 'none'}}>
   
           {/* ⬇️ Acá debería ir el nav con el router ⬇️ */}

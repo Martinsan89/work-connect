@@ -3,7 +3,7 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 
 const Home = () => {
   return (
-    <div style={{backgroundColor:'#F6FCFF', height:'100vh'}}>
+    <div style={{backgroundColor:'#F6FCFF', height:'96vh'}}>
       <Sidebar />
     </div>
   )

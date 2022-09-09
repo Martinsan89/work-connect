@@ -10,12 +10,12 @@
 .mainDiv {
     background-image: url(../../assets/Register/BG-Photo.svg);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 77vh;
 }
 
 .registerCard {
     position: relative;
-    top: 10rem;
+    top: 5rem;
     background-color: #FFFFFF;
     width: 700px;
     height: 460px;
@@ -150,7 +150,13 @@
     color: #FFFF;
 }
 
-.footer {
+.footer{
+    width: 100%;
+
+    margin: auto;
+}
+
+/* .footer {
     background-color: var(--main-blue);
     height: 12rem;
     margin-top: -3rem;
@@ -162,7 +168,7 @@
 
 .footerText {
     margin-top: 2rem;
-}
+} */
 
 .footerLink {
     color: #FFFF;

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.educationTag {
+    border-bottom: 1px solid #EAEBEE;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 70%;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
+}
+.educationTitle{
+    display: flex;
+    justify-content: flex-start;
+    gap: 9rem;
+}
+.tagTitle{
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 300;
+    color: #107ACC;
+}
+.tagDate {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    color: #001A24;
+    display: flex;
+    gap: 10px;
+}
+.subtitle{
+    font-family: Roboto;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+.text {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: flex-start;
+}
+.buttonSet {
+    position: fixed;
+    top: 45rem;
+    right: 6%;
+}
+.buttonModal{
+    background-color: #ffff;
+    border: none;
+}
+
+.imgButton {
+width: 80px;
+height: 80px;
+}
+
+.inputWork{
+    display: flex;
+    gap: 1rem;
+}
+
+.inputJobs{
+    margin: 1rem 0;
+    display: flex;
+    align-items: baseline;
+}
+.eye{
+  width: 3rem;
+  height: 17px;
+  margin-bottom: 3px;
+}
+.eyeText{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: 'magenta';
+  padding-left: 10px;
+}

@@ -56,9 +56,6 @@ export default function Work() {
                 <p>{work.text}</p>
               </div>
             </div>
-          </div>
-        )
-      })}
       <div className={`${styles.buttonSet}`}>
         {state.showEdit && <button variant="primary" style={{backgroundColor: '#ffff',
         border: 'none'}}  onClick={() => dispatch({type:"toggleEdit"})}>
@@ -71,6 +68,9 @@ export default function Work() {
         <ModalWork show={modalShow} onHide={() => setModalShow(false)}/>
         <UpdateWork show={updateShow} onHide={() => setUpdateShow(false)} id={id}/>
       </div>
+          </div>
+        )
+      })}
     </div>
   )
 }

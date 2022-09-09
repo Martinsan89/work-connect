@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './CreateNewAccount.module.css'
-import logo from '../../assets/Register/LogoWorkConnect.svg'
+// import logo from '../../assets/Register/LogoWorkConnect.svg'
+import Logo from '../../assets/Login/Logo.svg'
 import Vector from '../../assets/Register/Vector.svg'
 import Elipse from '../../assets/Register/Elipse.svg'
 import { Button } from 'react-bootstrap'
@@ -10,7 +11,7 @@ import AboutYouFreeForm from './AboutYouFreeForm' // Freelancer
 import AboutYouPersonForm from './AboutYouPersonForm' // Private User
 import ProfileDataForm from './ProfileDataForm' // Company
 import ProfileDataFyPForm from './ProfileDataFyPForm' // Freelancer & Private User
-import { Navigate, useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate, NavLink } from 'react-router-dom'
 
 
 const CreateNewAccount = ({ companyButton, freelaButton, personButon }) => {
@@ -86,11 +87,11 @@ const CreateNewAccount = ({ companyButton, freelaButton, personButon }) => {
                     }
                 </div>
                 <div className='mb-3' style={ accountData || aboutYou ? { marginTop: '0rem', paddingTop: '2rem', textAlign: 'center'} : { marginTop: '0rem', paddingTop: '0rem', textAlign: 'center'} } >
-                    <Button
-                        style={{padding:'1rem', backgroundColor:'#142157', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', borderRadius:'3rem', border: 'none', lineHeight:'20px', color:'#FFFFFF', marginRight:'10px', marginLeft: '-1.5rem'}} 
-                        onClick={ () => {props.onHide(); setPersonalData(true); setContactData(false); setSettingsModal(false)}  }>
+                    <NavLink to="/register" type="button"
+                        style={{padding:'1rem', backgroundColor:'#142157', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', borderRadius:'3rem', border: 'none', lineHeight:'20px', color:'#FFFFFF', marginRight:'10px', marginLeft: '-1.5rem', textDecoration:'none'}}> 
+                        {/* onClick={ () => {props.onHide(); setPersonalData(true); setContactData(false); setSettingsModal(false)}  }> */}
                             CANCEL
-                    </Button>
+                    </NavLink >
                     <Button  
                         onClick= { () => { accountData ?  setAccountData(false) & setAboutYou(true) & setProfileData(false) : aboutYou ? setAccountData(false) & setAboutYou(false) & setProfileData(true) : profileData ? setCreated(true) & handleVerify() : '' } }
                         style={{ padding:'1rem', backgroundColor:'#F14281', width:'160px', height:'52px', fontSize:'14px', fontWeight:'400', border: 'none', borderRadius:'3rem', lineHeight:'20px' }} 
@@ -104,7 +105,31 @@ const CreateNewAccount = ({ companyButton, freelaButton, personButon }) => {
                 
             </div>
         </div>
-        <footer className={ styles.footer }>
+        {/* Footer */}
+        <div className={`${styles.footer}`} style={{background:'#1870ca'}}>
+				<div className="col-12 d-flex justify-content-center py-4">
+					<img style={{width:'20%'}} src={Logo} alt="logo" />
+				</div>
+				<div className="col-12 d-flex justify-content-center py-3 mb-1">
+					<div style={{borderRight: '1px white solid'}}>
+						<span style={{color: '#f6f6f6', paddingRight: '11px',
+					paddingLeft: '25px', fontSize:'14px'}} 
+					> Privacy Policy</span>
+					</div>
+					<div style={{borderRight: '1px white solid'}}>
+						<span style={{color: '#f6f6f6', paddingRight: '11px',
+						paddingLeft: '15px', fontSize: '14px'}}> Terms of Use</span>
+					</div>
+					<span className="" style={{color: '#f6f6f6', paddingRight: '11px',
+					paddingLeft: '25px', fontSize: '14px'}}>Cookies Policy</span>
+				</div>
+				<div className="row" style={{background:'#00007c', width:'101%'}}>
+					<div className=" text-center text-white " style={{width:'50%', margin:'auto'}}>
+						<p className="my-2" style={{backgroundColor: '#00007c', fontSize:'15px'}}>Copyright © 	2022 WorkConnect 2022. Alle reachten voorbeh ouden</p>
+					</div>
+				</div>
+        </div>
+        {/* <footer className={ styles.footer }>
             <div className='text-center'>
                 <img className={ styles.footerLogo } src={ logo } alt="Logo" />
                 <div className={ styles.footerText }>
@@ -116,7 +141,7 @@ const CreateNewAccount = ({ companyButton, freelaButton, personButon }) => {
         </footer>
         <div className={ styles.copyrightDiv }>
             <p className={ styles.copyrightText }>Copyright ©  WorkConnect 2022. All Rights Reserved.</p>
-        </div>
+        </div> */}
     </>
   )
 }

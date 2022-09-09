@@ -7,9 +7,10 @@
 
     position: absolute;
     width: 270px;
-    /* height: 1086px; */
+    height: 96.5vh;
     left: 0px;
     top: 0px;
+    padding-top: 1.5rem;
 
     background: #FFFFFF;
     /* Values/Light */
@@ -30,6 +31,9 @@
 .divFlex {
     display: flex;
     cursor: pointer;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 1rem;
 }
 
 .divFlex p{
@@ -63,15 +67,15 @@
 }
 
 .iconLogo {
-    width: 40px;
+    width: 80%;
     height: 35px;
-    margin-top: 25px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 1rem;
 }
 
-.icons {
+/* .icons {
     margin: 15px 50px 0px 40px !important;
-}
+} */
 
 .hr {
     height: 3px;
@@ -114,15 +118,14 @@
         border-radius: 0px 0px 15px 15px;
 }
 
-.outlet {
-    margin-left: 18rem;
-    padding: 1rem;
-    /* margin-top: 1rem; */
-    width: 1050px;
-    height: 570px;
+.outletSidebar {
+    /* padding: 1rem; */
+    width: 75%;
+    margin-top: 2rem;
+    /* height: 4vh;
     border-radius: 16px;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.06);
-    overflow-y: scroll;
-    background-color: #ffff;
-    position: relative;
+    background-color: #ffff; */
+    position: relative; 
+    left: 18rem;
 }
